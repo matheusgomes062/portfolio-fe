@@ -27,6 +27,14 @@ function NavItem({ href, text }) {
   );
 }
 
+// export declare interface AppProps {
+//   children?: React.ReactNode; // best, accepts everything React can render
+//   childrenElement: JSX.Element; // A single React element
+//   style?: React.CSSProperties; // to pass through style props
+//   onChange?: React.FormEventHandler<HTMLInputElement>; // form events! the generic parameter is the type of event.target
+//   //  more info: https://react-typescript-cheatsheet.netlify.app/docs/advanced/patterns_by_usecase/#wrappingmirroring
+// }
+
 export default function Container(props) {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
@@ -39,7 +47,6 @@ export default function Container(props) {
   const meta = {
     title: 'Matheus Gomes – Developer, writer, curious.',
     description: `Front-end developer, JavaScript enthusiast, and mentor.`,
-    // image: 'https://leerob.io/static/images/lee-banner.png',
     type: 'website',
     ...customMeta
   };
@@ -117,7 +124,7 @@ export default function Container(props) {
       </div>
       <main
         id="skip"
-        className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900"
+        className="flex flex-col justify-center px-8 bg-gray-50 dark:bg-gray-900 pb-8"
       >
         {children}
         {/* <Footer /> */}
