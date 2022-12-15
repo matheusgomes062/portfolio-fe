@@ -10,7 +10,7 @@ export default function NotFound() {
           404 – Unavailable
         </h1>
         <p className="text-gray-600 dark:text-gray-400 mb-8">
-          Should be something here, but there's none.
+          Should be something here, but there&apos;s none.
         </p>
         <Link
           href="/"
