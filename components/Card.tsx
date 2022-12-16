@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import Image from 'next/image'
-import { FaGithub } from 'react-icons/fa';
+import { FaDev, FaGithub, FaLinkedinIn, FaMediumM } from 'react-icons/fa';
 import { HiExternalLink } from 'react-icons/hi';
 import Button from './Button';
 import cn from 'classnames';
@@ -16,13 +16,21 @@ interface CardProps {
    */
   source?: string;
   /**
-   * Visit link
+   * External Icon
    */
-  link: string;
+  externalLink?: string;
   /**
-   * Tags
+   * Github Icon
+   */
+  githubLink?: string;
+  /**
+   * Tags with label and color to show in the card
    */
   tags?: Array<{label: string, color: string}>;
+  /**
+   * Tags with label and color to show in the card
+   */
+  summary: string;
 }
 
 function BannerProject({source}: {source: string | undefined}) {
@@ -44,8 +52,7 @@ function BannerProject({source}: {source: string | undefined}) {
 }
 
 function TagTheme(color: string) {
-  console.log(color)
-  const theme = [{color: 'green', class:'bg-green-200 text-green-700'}, {color: 'blue', class:'bg-blue-200 text-blue-700'}, {color: 'yellow', class:'bg-yellow-200 text-yellow-700'}, {color: 'red', class:'bg-red-200 text-red-700'}].filter(item =>
+  const theme = [{color: 'green', class:'bg-green-200 text-green-700'}, {color: 'blue', class:'bg-blue-200 text-blue-700'}, {color: 'yellow', class:'bg-yellow-200 text-yellow-700'}, {color: 'red', class:'bg-red-200 text-red-700'}, {color: 'gray', class:'bg-gray-200 text-gray-700'}].filter(item =>
     item.color === color
   )
   return theme[0].class.toString()
@@ -54,7 +61,9 @@ function TagTheme(color: string) {
 const Card: FunctionComponent<CardProps> = ({
   title,
   source,
-  link,
+  externalLink,
+  githubLink,
+  summary,
   ...props
 }) => {
   return (
@@ -73,7 +82,7 @@ const Card: FunctionComponent<CardProps> = ({
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
                   <div
-                    className={cn(`text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full my-2 mr-2 ${TagTheme(object.color)}`
+                    className={cn(`text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full my-2 mr-2 hover:scale-150 ${TagTheme(object.color)}`
                   )}
                     key={i}
                   >
@@ -81,31 +90,23 @@ const Card: FunctionComponent<CardProps> = ({
                   </div>
                 )
               }
-              
+            <div className='text-start mt-1 text-sm'>
+              {summary}
+            </div>
             <div className='flex flex-row items-center fixed bottom-5 gap-5'>
-              <Button
-                aria="Visit Github Repo"
-                link="#"
-                >Visit
-                  <HiExternalLink/>
-              </Button>
+              { externalLink && <Button
+                  aria="Visit External Link"
+                  link={externalLink}
+                  >Visit
+                    <HiExternalLink/>
+                </Button>
+              }
               
-              
-              <Button isIcon="false"
-                link="#">
+              { githubLink &&<Button isIcon="false"
+                  link={externalLink}>
                 <FaGithub/>
               </Button>
-              
-              
-              <Button isIcon="false"
-                link="#">
-                <FaGithub/>
-              </Button>
-
-              <Button isIcon="false"
-                link="#">
-                <FaGithub/>
-              </Button>
+              }
             </div>
         </div>
     </div>
