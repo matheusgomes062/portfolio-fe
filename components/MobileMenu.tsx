@@ -50,15 +50,15 @@ export default function MobileMenu() {
           )}
         >
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '150ms' }}
           >
-            <Link href="/" className="flex w-auto pb-4 justify-end">
+            <Link href="/" className="flex w-auto pb-4 justify-end  ">
               Home
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/guestbook" className="flex w-auto pb-4 justify-end">
@@ -66,7 +66,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/dashboard" className="flex w-auto pb-4 justify-end">
@@ -74,7 +74,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '250ms' }}
           >
             <Link href="/blog" className="flex w-auto pb-4 justify-end">
@@ -82,7 +82,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '275ms' }}
           >
             <Link href="/snippets" className="flex w-auto pb-4 justify-end">
@@ -90,7 +90,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '300ms' }}
           >
             <Link href="/newsletter" className="flex w-auto pb-4 justify-end">
@@ -98,7 +98,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '325ms' }}
           >
             <Link href="/tweets" className="flex w-auto pb-4 justify-end">
@@ -106,7 +106,7 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:dark:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-blue-500 to-purple-500"
             style={{ transitionDelay: '350ms' }}
           >
             <Link href="/uses" className="flex w-auto pb-4 justify-end">
