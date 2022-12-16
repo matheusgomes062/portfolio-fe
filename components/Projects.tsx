@@ -8,7 +8,7 @@ export default function Projects() {
         <Card title="Project 1" link="#" source="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png" tags={[{label: "react", color: "blue"}, {label: "vue.js", color: "green"}]}/>
         <Card title="Project 2" link="#" source="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png"/>
         <Card title="Project 3" link="#" source="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png"/>
-        <Card title="Project 4" link="#" />
+        <Card title="Project 4" link="#"  tags={[{label: "typescript", color: "blue"}, {label: "angular", color: "red"}]}/>
       </div>
 
     </section>
