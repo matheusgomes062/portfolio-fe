@@ -4,6 +4,7 @@ import Welcome from '@/components/Welcome';
 import { Suspense } from 'react';
 
 import Container from '../components/Container';
+import Posts from '@/components/Posts';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
               <Welcome/>
             </div>
             <Projects/>
+            <Posts/>
           </section>
         </div>
       </Container>

@@ -67,9 +67,9 @@ const Card: FunctionComponent<CardProps> = ({
   ...props
 }) => {
   return (
-    <div className="relative group">
+    <div className="relative group transform hover:scale-[1.01] transition-all">
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-    <div className="sm:w-full h-96 bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
+    <div className="sm:w-full h-96 md:h-[25rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
         <a href="#">
           <BannerProject source={source}/>
         </a>
@@ -82,7 +82,7 @@ const Card: FunctionComponent<CardProps> = ({
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
                   <div
-                    className={cn(`text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full my-2 mr-2 hover:scale-150 ${TagTheme(object.color)}`
+                    className={cn(`text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full my-2 mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
                   )}
                     key={i}
                   >
