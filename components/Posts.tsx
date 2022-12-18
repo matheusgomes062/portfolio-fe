@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import Post from "./Post";
+import SmartLink from "./SmartLink";
 
 const Posts: FunctionComponent = ({
 }) => {
@@ -11,7 +12,7 @@ const Posts: FunctionComponent = ({
         <Post title="Rust Is The Future of JavaScript Infrastructure"/>
         <Post title="Past, Present, and Future of React State Management"/>
       </div>
-
+      <SmartLink label="View more posts" link="#" icon="seeMore"/>
     </section>
   );
 }
