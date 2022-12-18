@@ -30,7 +30,7 @@ const SmartLink: FunctionComponent<SmartLinkProps> = ({
   ...props
 }) => {
   return (
-      <div className='flex self-start pt-5 font-normal text-gray-600 dark:text-gray-400 first-line hover:text-gray-200 hover:dark:text-gray-200 transform transition-all'>
+      <div className='flex self-start mt-5 font-normal text-gray-400 dark:text-gray-400 first-line hover:text-gray-700 hover:dark:text-gray-200 transform transition-all'>
         <a href='#' className='flex flex-row items-center'>
           {label}
           {icon && IconSelector(icon)}
