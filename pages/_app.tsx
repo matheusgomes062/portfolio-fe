@@ -6,13 +6,13 @@ import { Rubik } from '@next/font/google';
 export const rubik = Rubik({
   subsets: ['latin'],
   style: ['normal', 'italic'],
-  weight: ['400', '500', '600', '700'],
+  variable: '--font-rubik'
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
       <ThemeProvider attribute="class">
-        <main className={rubik.className}>
+        <main className={`${rubik.variable} font-serif`}>
           <Component {...pageProps} />
         </main>
       </ThemeProvider>
