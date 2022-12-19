@@ -5,6 +5,11 @@ const nextConfig = {
   images: {
     domains: ["assets.vercel.com"],
   },
+  experimental: {
+    fontLoaders: [
+      { loader: '@next/font/google', options: { subsets: ['latin'] } },
+    ],
+  },
   async headers() {
     return [
       {
