@@ -31,12 +31,12 @@ export default function Footer() {
           >
             About
           </Link>
-          <Link
+          {/* <Link
             href="/newsletter"
             className="text-gray-400 hover:text-gray-700 transition"
           >
             Newsletter
-          </Link>
+          </Link> */}
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/matheusgomes062">
@@ -51,12 +51,12 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          <Link
+          {/* <Link
             href="/uses"
             className="text-gray-400 hover:text-gray-700 transition"
           >
             Uses
-          </Link>
+          </Link> */}
           <Link
             href="/guestbook"
             className="text-gray-400 hover:text-gray-700 transition"

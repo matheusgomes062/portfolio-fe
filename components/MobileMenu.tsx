@@ -57,60 +57,44 @@ export default function MobileMenu() {
               Home
             </Link>
           </li>
-          <li
+          {/* <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '175ms' }}
           >
             <Link href="/guestbook" className="flex w-auto pb-4 justify-end">
               Guestbook
             </Link>
-          </li>
-          <li
+          </li> */}
+          {/* <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/dashboard" className="flex w-auto pb-4 justify-end">
               Dashboard
             </Link>
-          </li>
-          <li
+          </li> */}
+          {/* <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '250ms' }}
           >
             <Link href="/blog" className="flex w-auto pb-4 justify-end">
               Blog
             </Link>
-          </li>
-          <li
+          </li> */}
+          {/* <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '275ms' }}
           >
             <Link href="/snippets" className="flex w-auto pb-4 justify-end">
               Snippets
             </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
-            style={{ transitionDelay: '300ms' }}
-          >
-            <Link href="/newsletter" className="flex w-auto pb-4 justify-end">
-              Newsletter
-            </Link>
-          </li>
+          </li> */}
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '325ms' }}
           >
             <Link href="/tweets" className="flex w-auto pb-4 justify-end">
               Tweets
-            </Link>
-          </li>
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
-            style={{ transitionDelay: '350ms' }}
-          >
-            <Link href="/uses" className="flex w-auto pb-4 justify-end">
-              Uses
             </Link>
           </li>
         </ul>
