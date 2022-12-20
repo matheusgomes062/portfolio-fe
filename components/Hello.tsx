@@ -1,6 +1,6 @@
 export default function Hello() {
   return (
-    <section className='flex flex-row items-center'>
+    <section className='flex flex-row items-center w-full'>
       <h2 className='font-extrabold text-3xl'>Hello!</h2>
         <svg
           width="30"
@@ -9,7 +9,7 @@ export default function Hello() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
-          className='ml-5 animate-shake-hands origin-[70%_70%]'
+          className='ml-2 animate-shake-hands origin-[70%_70%]'
         >
           <path d="M0 30.752H30V0.228912H0V30.752Z" fill="url(#pattern0)" />
           <defs>

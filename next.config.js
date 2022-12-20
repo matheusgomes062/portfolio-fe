@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["assets.vercel.com"],
+    domains: ["assets.vercel.com", 'images.unsplash.com'],
   },
   experimental: {
     fontLoaders: [

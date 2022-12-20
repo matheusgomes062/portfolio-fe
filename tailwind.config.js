@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['var(--font-rubik)']
+        sans: ['var(--font-rubik)']
       },
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',

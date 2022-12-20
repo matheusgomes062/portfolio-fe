@@ -39,12 +39,15 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/leeerob">
+          <ExternalLink href="https://twitter.com/matheusgomes062">
             Twitter
           </ExternalLink>
-          <ExternalLink href="https://github.com/leerob">GitHub</ExternalLink>
-          <ExternalLink href="https://www.youtube.com/channel/UCZMli3czZnd1uoc1ShTouQw">
-            YouTube
+          <ExternalLink href="https://github.com/matheusgomes062">GitHub</ExternalLink>
+          <ExternalLink href="https://dev.to/matheusgomes062">
+            Dev.to
+          </ExternalLink>
+          <ExternalLink href="https://mgodev.hashnode.dev/">
+            Hashnode
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
