@@ -6,7 +6,7 @@ export default function Welcome() {
   return (
     <section>
       <div className="flex md:flex-row flex-col-reverse gap-5">
-        <div className="flex-row mr-[3.6rem]">
+        <div className="flex-row mr-[2rem]">
           <Hello/>
           <h1 className='font-bold text-5xl max-w-5xl mb-3'>I&apos;m Matheus Gomes
           </h1>
@@ -14,7 +14,7 @@ export default function Welcome() {
           but I can launch your website into orbit 🪐!</h3>
         </div>
         <Image
-          className="rounded-2xl w-[150px] h-[150px] md:self-center"
+          className="rounded-xl md:self-center"
           src="/profile-pic.png"
           alt="Avatar"
           height={150} // Desired size with correct aspect ratio

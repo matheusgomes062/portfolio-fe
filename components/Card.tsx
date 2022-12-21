@@ -41,7 +41,7 @@ function BannerProject({source}: {source: string | undefined}) {
           width={600}
           height={150}
           style={{
-            maxWidth: '100%',
+            minWidth: '100%',
             height: '150px',
             objectFit: "cover"
           }}
