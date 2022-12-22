@@ -54,7 +54,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
             <Image
               key={i}
               className="rounded-lg md:self-center even:w-[50%]"
-              src={`/${object.image}`}
+              src={`${object.image}`}
               alt={object.alt}
               width={150}
               height={150}
