@@ -78,21 +78,21 @@ const Card: FunctionComponent<CardProps> = ({
   return (
     <div className="relative group transform hover:scale-[1.01] transition-all">
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-    <div className="sm:w-full h-[27rem] md:h-[29rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
+    <div className="sm:w-full h-[28rem] md:h-[29rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
         <a href={externalLink || githubLink}>
           <BannerProject source={source}/>
         </a>
         <div className="px-5 pb-5">
-            <a href="#">
+            <a href={externalLink || githubLink}>
                 <h5 className="text-xl font-semibold tracking-tight pt-5 text-gray-900 dark:text-white">
                   {title}
                 </h5>
             </a>
-            <div className='h-16 md:h-24 mb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
+            <div className='h-20 md:h-24 mb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
                 <div
-                className={cn(`cursor-pointer text-[10px] inline-flex items-center font-bold leading-sm uppercase px-2 rounded-full mb-1 mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
+                className={cn(`cursor-pointer text-[10px] inline-flex items-center font-bold leading-sm uppercase px-2 rounded-full mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
                 )}
                 key={i}
                 >

@@ -4,7 +4,7 @@ import SmartLink from './SmartLink';
 export default function Projects() {
   return (
     <section className='flex flex-col items-center w-full'>
-      <h2 className='font-extrabold text-3xl self-start pb-10'>Featured Projects</h2>
+      <h2 className='font-extrabold text-3xl self-start pb-5'>Featured Projects</h2>
       <div className='grid gap-5 w-full md:grid-cols-2 sm:grid-cols-1'>
         <Card
         title="LaraZillow"
@@ -67,7 +67,15 @@ export default function Projects() {
             externalLink="https://drive.google.com/file/d/18sS8Pb7p22uRgDwFTOh1kI4VaVSWDy9Y/view"
             githubLink="https://github.com/matheusgomes062/guia-markdown"
             source="https://user-images.githubusercontent.com/47605309/155583890-adb2059d-f0fc-43e5-814c-e3963fbe6501.png"
-            tags={[{label: "markdown", color: "gray"}]} 
+            tags={
+              [
+                {label: "markdown", color: "blue"},
+                {label: "Git", color: "gray"},
+                {label: "Brazil", color: "green"},
+                {label: "Git", color: "gray"},
+                {label: "Book", color: "purple"},
+              ]
+            } 
             summary="Book intended to teach and be a guide about Markdown, being the first book of its kind in Brazil. Written in Markdown about Markdown and made available for free!"/>
       </div>
       <SmartLink label="View more projects" link="#" icon="seeMore"/>
