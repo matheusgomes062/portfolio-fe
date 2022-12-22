@@ -12,7 +12,7 @@ export const rubik = Rubik({
 export default function App({ Component, pageProps }: AppProps) {
   return (
       <ThemeProvider attribute="class">
-        <main className={`${rubik.variable} font-sans`}>
+        <main className={`${rubik.variable} font-sans antialiased`}>
           <Component {...pageProps} />
         </main>
       </ThemeProvider>

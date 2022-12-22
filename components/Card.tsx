@@ -36,8 +36,8 @@ interface CardProps {
 function BannerProject({source}: {source: string | undefined}) {
   if (source) {
     return <Image
-          alt="Next.js logo"
-          src="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png"
+          alt="Project image"
+          src={source}
           width={600}
           height={150}
           style={{
@@ -52,7 +52,16 @@ function BannerProject({source}: {source: string | undefined}) {
 }
 
 function TagTheme(color: string) {
-  const theme = [{color: 'green', class:'bg-green-200 text-green-700'}, {color: 'blue', class:'bg-blue-200 text-blue-700'}, {color: 'yellow', class:'bg-yellow-200 text-yellow-700'}, {color: 'red', class:'bg-red-200 text-red-700'}, {color: 'gray', class:'bg-gray-200 text-gray-700'}].filter(item =>
+  const theme = [
+    {color: 'green', class:'bg-green-200 text-green-700'},
+    {color: 'blue', class:'bg-blue-200 text-blue-700'},
+    {color: 'yellow', class:'bg-yellow-200 text-yellow-700'},
+    {color: 'red', class:'bg-red-200 text-red-700'},
+    {color: 'gray', class:'bg-gray-200 text-gray-700'},
+    {color: 'pink', class:'bg-pink-200 text-pink-700'},
+    {color: 'purple', class:'bg-purple-200 text-purple-700'},
+    {color: 'orange', class:'bg-orange-200 text-orange-700'}
+  ].filter(item =>
     item.color === color
   )
   return theme[0].class.toString()
@@ -69,8 +78,8 @@ const Card: FunctionComponent<CardProps> = ({
   return (
     <div className="relative group transform hover:scale-[1.01] transition-all">
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-    <div className="sm:w-full h-96 md:h-[25rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
-        <a href="#">
+    <div className="sm:w-full h-[27rem] md:h-[29rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
+        <a href={externalLink || githubLink}>
           <BannerProject source={source}/>
         </a>
         <div className="px-5 pb-5">
@@ -79,19 +88,23 @@ const Card: FunctionComponent<CardProps> = ({
                   {title}
                 </h5>
             </a>
+            <div className='h-16 md:h-24 mb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
-                  <div
-                    className={cn(`text-xs inline-flex items-center font-bold leading-sm uppercase px-3 py-1 rounded-full my-2 mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
-                  )}
-                    key={i}
-                  >
+                <div
+                className={cn(`cursor-pointer text-[10px] inline-flex items-center font-bold leading-sm uppercase px-2 rounded-full mb-1 mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
+                )}
+                key={i}
+                >
                     {object.label}
                   </div>
                 )
               }
-            <div className='text-start mt-1 text-sm'>
-              {summary}
+            </div>
+            <div className='text-start relative mt-1 text-sm h-20'>
+              <p className='absolute bottom-0'>
+                {summary}
+              </p>
             </div>
             <div className='flex flex-row items-center fixed bottom-5 gap-5'>
               { externalLink && <Button
@@ -102,8 +115,8 @@ const Card: FunctionComponent<CardProps> = ({
                 </Button>
               }
               
-              { githubLink &&<Button isIcon="false"
-                  link={externalLink}>
+              { githubLink && <Button isIcon="false"
+                  link={githubLink}>
                 <FaGithub/>
               </Button>
               }

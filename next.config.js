@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["assets.vercel.com", 'images.unsplash.com'],
+    domains: ["assets.vercel.com", 'images.unsplash.com', 'user-images.githubusercontent.com'], 
+    formats: ['image/avif', 'image/webp'],
   },
   experimental: {
     fontLoaders: [
@@ -30,7 +31,6 @@ const ContentSecurityPolicy = `
     img-src * blob: data:;
     media-src 'none';
     connect-src *;
-    font-src 'self';
     font-src 'self' data:;
 `;
 
