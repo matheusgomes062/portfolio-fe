@@ -76,7 +76,7 @@ export default function Projects() {
                 {label: "Book", color: "purple"},
               ]
             } 
-            summary="Book intended to teach and be a guide about Markdown, being the first book of its kind in Brazil. Written in Markdown about Markdown and made available for free!"/>
+            summary="Book intended to teach and be a guide about Markdown. Written in Markdown about Markdown and made available for free!"/>
       </div>
       <SmartLink label="View more projects" link="#" icon="seeMore"/>
     </section>

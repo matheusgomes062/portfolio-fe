@@ -194,8 +194,54 @@ export default function About() {
                   image: "/agrotools-presentation.webp"
                 },
               ]}
-              startDate="10/2020"
-              endDate='03/2021'
+              startDate="07/2020"
+              endDate='10/2020'
+            />
+            <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
+            <ExperienceCard
+              role="Intern"
+              company='Agrotools'
+              source="https://agrotools.com.br/"
+              description="Application development using Javascript, Jquery and also modern frameworks like Vue.js and Scss. Implemented translation feature (i18n) in an insurance project. Development of new tools using famous web map services. Tool development that facilitates the creation of queries at first user-level and developer level. Created a corporate video of company presentations using animation and digital art resources."
+              images={[
+                {
+                  alt: "Agrotools logo",
+                  image: "/agrotools-logo.png"
+                },
+                {
+                  alt: "Agrotools software",
+                  image: "/agrotools-software.webp"
+                },
+                {
+                  alt: "Agrotools prsentation",
+                  image: "/agrotools-presentation.webp"
+                },
+              ]}
+              startDate="11/2018"
+              endDate='07/2020'
+            />
+            <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
+            <ExperienceCard
+              role="Writer"
+              company='Bitnotícias'
+              source="https://bitnoticias.com.br/"
+              description="I wrote technology news in cryptocurrencies and blockchain for the site bitnoticias.com.br."
+              images={[
+                {
+                  alt: "Working blog table",
+                  image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                },
+                {
+                  alt: "Bitcoin coins",
+                  image: "https://images.unsplash.com/photo-1609726494499-27d3e942456c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                },
+                {
+                  alt: "Crypto graphs",
+                  image: "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                },
+              ]}
+              startDate="11/2018"
+              endDate='07/2020'
             />
           </section>
         </div>

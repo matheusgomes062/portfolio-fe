@@ -13,8 +13,9 @@ export default function Welcome() {
           <h3 className='text-xl text-gray-600 dark:text-gray-300 mb-6'>I may not be a rocket scientist 🚀,<br/>
           but I can launch your website into orbit 🪐!</h3>
         </div>
+        
         <Image
-          className="rounded-xl md:self-center"
+          className="rounded-xl md:self-center hidden md:block"
           src="/profile-pic.png"
           alt="Avatar"
           height={150} // Desired size with correct aspect ratio
