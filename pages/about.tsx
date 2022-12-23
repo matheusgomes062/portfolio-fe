@@ -12,7 +12,7 @@ export default function About() {
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
           <h2>Links</h2>
-          <div className='list-none flex flex-row justify-start gap-3'>
+          <div className='list-none flex flex-row justify-start gap-3 flex-wrap'>
             <a href="https://github.com/matheusgomes062">
               <FaGithubSquare className='w-11 h-11'/>
             </a>
