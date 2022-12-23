@@ -78,7 +78,7 @@ const Card: FunctionComponent<CardProps> = ({
   return (
     <div className="relative group transform hover:scale-[1.01] transition-all">
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-    <div className="sm:w-full h-[27rem] md:h-[28rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
+    <div className="sm:w-full h-auto md:h-[28rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
         <a href={externalLink || githubLink}>
           <BannerProject source={source}/>
         </a>
@@ -88,7 +88,7 @@ const Card: FunctionComponent<CardProps> = ({
                   {title}
                 </h5>
             </a>
-            <div className='h-20 md:h-20 mb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
+            <div className='md:h-20 my-3 pb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
                 <div
@@ -101,7 +101,7 @@ const Card: FunctionComponent<CardProps> = ({
                 )
               }
             </div>
-            <div className='text-start relative mt-1 text-sm h-[4rem] md:h-[5rem]'>
+            <div className='text-start relative text-sm h-20 md:h-[5rem] mb-14'>
               <p className='absolute bottom-0'>
                 {summary}
               </p>

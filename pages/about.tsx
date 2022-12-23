@@ -1,9 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-
 import Container from '@/components/Container';
-import avatar from 'public/profile-pic.png';
 import ExperienceCard from '@/components/ExperienceCard';
+import { FaDev, FaGithubSquare, FaLinkedin, FaMedium, FaTwitterSquare } from 'react-icons/fa';
+import { SiGmail, SiHashnode } from 'react-icons/si';
 
 export default function About() {
   return (
@@ -14,23 +12,29 @@ export default function About() {
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
           <h2>Links</h2>
-          <ul>
-            <li>
-              Twitter: <a href="https://twitter.com/matheusgomes062">@matheusgomes062</a>
-            </li>
-            <li>
-              GitHub: <a href="https://github.com/matheusgomes062">@matheusgomes062</a>
-            </li>
-            <li>
-              Website: <Link href="https://mgodev.vercel.app">https://mgodev.vercel.app</Link>
-            </li>
-            <li>
-              LinkedIn:{' '}
-              <a href="https://www.linkedin.com/in/matheus-gomes-dev/">
-                https://www.linkedin.com/in/matheus-gomes-dev
-              </a>
-            </li>
-          </ul>
+          <div className='list-none flex flex-row justify-start gap-3'>
+            <a href="https://github.com/matheusgomes062">
+              <FaGithubSquare className='w-11 h-11'/>
+            </a>
+            <a href="https://twitter.com/matheusgomes062">
+              <FaTwitterSquare className='w-11 h-11'/>
+            </a>
+            <a href="https://www.linkedin.com/in/matheus-gomes-dev/">
+              <FaLinkedin className='w-11 h-11'/>
+            </a>
+            <a href="https://dev.to/matheusgomes062">
+              <FaDev className='w-11 h-11'/>
+            </a>
+            <a href="https://mgodev.hashnode.dev/">
+              <SiHashnode className='w-11 h-11'/>
+            </a>
+            <a href="https://matheusgomes062.medium.com/">
+              <FaMedium className='w-11 h-11'/>
+            </a>
+            <a href="mailto: matheusgomes062@gmail.com">
+              <SiGmail className='w-11 h-11'/>
+            </a>
+          </div>
           <section>
             <h2>My journey</h2>
             <ExperienceCard
