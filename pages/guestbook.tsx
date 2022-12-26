@@ -29,7 +29,7 @@ export async function getStaticProps() {
     }
   });
 
-  const fallbackData = entries.map((entry): { id: string; body: string; created_by: string; updated_at: string; } => ({
+  const fallbackData = entries.map((entry: any)  => ({
     id: entry.id.toString(),
     body: entry.body,
     created_by: entry.created_by.toString(),
