@@ -19,8 +19,7 @@ export default function Dashboard() {
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             This is my personal dashboard, built with Next.js API routes
             deployed as serverless functions. I use this dashboard to track
-            various metrics across platforms like Unsplash, YouTube, GitHub, and
-            more. Want to build your own? Check out my&nbsp;
+            various metrics across platforms like GitHub and Analytics. Want to build your own? Check out my&nbsp;
             <Link
               href="/blog/fetching-data-with-swr"
               className="text-gray-900 dark:text-gray-100 underline"
@@ -37,7 +36,7 @@ export default function Dashboard() {
           Top Tracks
         </h2>
         <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Curious what I'm currently jamming to? Here's my top tracks on Spotify
+          Curious what I&apos;m currently jamming to? Here&apos;s my top tracks on Spotify
           updated daily.
         </p>
         <TopTracks />
