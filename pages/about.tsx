@@ -11,7 +11,7 @@ export default function About() {
           About Me
         </h1>
         <div className="mb-8 prose dark:prose-dark leading-6">
-          <h2>Links</h2>
+          <h2>Socials</h2>
           <div className='list-none flex flex-row justify-start gap-3 flex-wrap'>
             <a href="https://github.com/matheusgomes062">
               <FaGithubSquare className='w-11 h-11'/>
@@ -41,9 +41,7 @@ export default function About() {
               role="Sr. Software Engineer"
               company='UCLA'
               source="https://ucla.edu"
-              description="Working with the University of California at Los Angeles to create a new library access page. Using Vue 2, Rollup, Nuxt, Storybook, Cypress, Git, GraphQL and other modern technologies.
-              I worked developing components based on designs in Figma and going through a rigid development workflow, using e2e tests, peer review and pair programming. The components were initially developed with the intention of being hard coded and then we changed the focus to develop the components as a library and reuse in other applications using rollup and vue 2.
-              I also worked on the UCLA MEAP website. One of the most important pages in the university library."
+              description="Worked with the University of California at Los Angeles to create a new library access page. The components were initially developed with the intention of being hard coded and then we changed the focus to develop the components as a library and reuse in other applications using rollup and vue 2. I also worked on the UCLA MEAP website, one of the most important pages in the university library."
                 images={[
                   {
                     alt: "UCLA",
@@ -60,6 +58,24 @@ export default function About() {
                 ]}
               startDate="04/2022"
               endDate='12/2022'
+              tags={
+                [
+                  {label: "Vue2", color: "green"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Storybook", color: "pink"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Git", color: "gray"},
+                  {label: "Rollup", color: "red"},
+                  {label: "Nuxt.js", color: "green"},
+                  {label: "Cypress", color: "yellow"},
+                  {label: "CI/CD", color: "blue"},
+                  {label: "Jira", color: "blue"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Code Review", color: "orange"},
+                  {label: "English", color: "gray"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              } 
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -83,15 +99,29 @@ export default function About() {
               ]}
               startDate="04/2022"
               endDate='now'
+              tags={
+                [
+                  {label: "Vue2", color: "green"},
+                  {label: "Vuex", color: "green"},
+                  {label: "Vue router", color: "green"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Git", color: "gray"},
+                  {label: "Nuxt.js", color: "green"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Code Review", color: "orange"},
+                  {label: "Teaching", color: "blue"},
+                  {label: "Diversity", color: "pink"},
+                  {label: "Front-end", color: "yellow"},
+                ]
+              } 
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
               role="Researcher"
               company='Unifesp'
               source="https://www.unifesp.br/"
-              description="Project coordinated by Prof. Dr. Elke Stedefeldt, Prof. Dr. Ezequiel Zorzal and by doctoral student Rayane Stephanie Gomes de Freitas. Activities performed: architecture and development of the front-end of the
-                application. Contemplating but not limited to System Design, UI, Report Export,REST call creation, page creation, navigation logic, form creation
-                dynamic, responsiveness, and store of the application. Using technologies such as Vue.js, Axios, Element-UI, Bootstrap, Sass, Git, Vercel, among others."
+              description="Project coordinated by Prof. Dr. Elke Stedefeldt, Prof. Dr. Ezequiel Zorzal and by doctoral student Rayane Stephanie Gomes de Freitas. Activities performed: architecture and development of the front-end of the application."
               images={[
                 {
                   alt: "Unifesp logo",
@@ -108,6 +138,23 @@ export default function About() {
               ]}
               startDate="01/2021"
               endDate='05/2022'
+              tags={
+                [
+                  {label: "Vue2", color: "green"},
+                  {label: "Vuex", color: "green"},
+                  {label: "Vue router", color: "green"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Git", color: "gray"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Front-end", color: "yellow"},
+                  {label: "vercel", color: "gray"},
+                  {label: "Research", color: "blue"},
+                  {label: "Bootstrap", color: "purple"},
+                  {label: "element-ui", color: "blue"},
+                  {label: "Team effort", color: "green"},
+                ]
+              } 
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -131,6 +178,28 @@ export default function About() {
               ]}
               startDate="01/2021"
               endDate='04/2022'
+              tags={
+                [
+                  {label: "Vue2", color: "green"},
+                  {label: "Vuex", color: "green"},
+                  {label: "Vue router", color: "green"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Pug", color: "blue"},
+                  {label: "Git", color: "gray"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Front-end", color: "yellow"},
+                  {label: "element-ui", color: "blue"},
+                  {label: "Team effort", color: "green"},
+                  {label: "Startup", color: "orange"},
+                  {label: "Vuetify", color: "blue"},
+                  {label: "Nuxt.js", color: "green"},
+                  {label: "SVN", color: "red"},
+                  {label: "Scrum", color: "pink"},
+                  {label: "Java", color: "yellow"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              }
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -154,6 +223,27 @@ export default function About() {
               ]}
               startDate="09/2020"
               endDate='05/2021'
+              tags={
+                [
+                  {label: "Vue2", color: "green"},
+                  {label: "Vuex", color: "green"},
+                  {label: "Vue router", color: "green"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Pug", color: "blue"},
+                  {label: "Git", color: "gray"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Front-end", color: "yellow"},
+                  {label: "element-ui", color: "blue"},
+                  {label: "Team effort", color: "green"},
+                  {label: "Leader", color: "red"},
+                  {label: "Startup", color: "orange"},
+                  {label: "Vuetify", color: "blue"},
+                  {label: "Scrum", color: "pink"},
+                  {label: "AdobeXD", color: "pink"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              }
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -177,6 +267,23 @@ export default function About() {
               ]}
               startDate="10/2020"
               endDate='03/2021'
+              tags={
+                [
+                  {label: "HTML", color: "red"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "CSS", color: "blue"},
+                  {label: "Git", color: "gray"},
+                  {label: "Back-end", color: "orange"},
+                  {label: "Team effort", color: "green"},
+                  {label: "Scrum", color: "pink"},
+                  {label: "XUnity", color: "gray"},
+                  {label: ".NET Core", color: "green"},
+                  {label: "SQL", color: "yellow"},
+                  {label: "PostgreSQL", color: "blue"},
+                  {label: "DDD", color: "red"},
+                  {label: "Unit Testing", color: "yellow"},
+                ]
+              }
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -200,6 +307,29 @@ export default function About() {
               ]}
               startDate="07/2020"
               endDate='10/2020'
+              tags={
+                [
+                  {label: "HTML", color: "red"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Jquery", color: "green"},
+                  {label: "CSS", color: "blue"},
+                  {label: "Full-stack", color: "orange"},
+                  {label: "Team effort", color: "green"},
+                  {label: "Scrum", color: "pink"},
+                  {label: ".NET Core", color: "green"},
+                  {label: "SQL", color: "yellow"},
+                  {label: "PostgreSQL", color: "blue"},
+                  {label: "Vue2", color: "green"},
+                  {label: "Vuex", color: "green"},
+                  {label: "Vue router", color: "green"},
+                  {label: "React-native", color: "blue"},
+                  {label: "POSTGIS", color: "red"},
+                  {label: "Geo", color: "green"},
+                  {label: "Presentation", color: "orange"},
+                  {label: "REST API", color: "blue"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              }
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -223,6 +353,24 @@ export default function About() {
               ]}
               startDate="11/2018"
               endDate='07/2020'
+              tags={
+                [
+                  {label: "HTML", color: "red"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "Jquery", color: "green"},
+                  {label: "CSS", color: "blue"},
+                  {label: "Full-stack", color: "orange"},
+                  {label: "Team effort", color: "green"},
+                  {label: ".NET Core", color: "green"},
+                  {label: "SQL", color: "yellow"},
+                  {label: "PostgreSQL", color: "blue"},
+                  {label: "POSTGIS", color: "red"},
+                  {label: "Geo", color: "green"},
+                  {label: "Presentation", color: "orange"},
+                  {label: "REST API", color: "blue"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              }
             />
             <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
             <ExperienceCard
@@ -246,6 +394,13 @@ export default function About() {
               ]}
               startDate="11/2018"
               endDate='07/2020'
+              tags={
+                [
+                  {label: "Writing", color: "orange"},
+                  {label: "Crypto", color: "yellow"},
+                  {label: "Investing", color: "blue"},
+                ]
+              }
             />
           </section>
         </div>

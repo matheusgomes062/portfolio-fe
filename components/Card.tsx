@@ -88,11 +88,11 @@ const Card: FunctionComponent<CardProps> = ({
                   {title}
                 </h5>
             </a>
-            <div className='md:h-20 my-3 pb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
+            <div className='md:h-20 mt-1 mb-3 pb-3 border-b border-gray-300 dark:border-gray-700 text-gray-900'>
               {
                 props.tags?.map((object: {label: string, color: string}, i: number) =>
                 <div
-                className={cn(`cursor-pointer text-[10px] inline-flex items-center font-bold leading-sm uppercase px-2 rounded-full mr-2 transform hover:scale-[1.05] transition-all ${TagTheme(object.color)}`
+                className={cn(`cursor-pointer text-[10px] inline-flex items-center font-bold leading-sm uppercase px-2 rounded-sm mr-2 hover:-translate-y-1 transition-all ${TagTheme(object.color)}`
                 )}
                 key={i}
                 >

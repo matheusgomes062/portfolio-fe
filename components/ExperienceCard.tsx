@@ -35,6 +35,26 @@ interface ExperienceCardProps {
    * startDate for your experience
    */
   endDate: string;
+  /**
+   * Tags with label and color to show in the card
+   */
+  tags?: Array<{label: string, color: string}>;
+}
+
+function TagTheme(color: string) {
+  const theme = [
+    {color: 'green', class:'bg-green-200 text-green-700'},
+    {color: 'blue', class:'bg-blue-200 text-blue-700'},
+    {color: 'yellow', class:'bg-yellow-200 text-yellow-700'},
+    {color: 'red', class:'bg-red-200 text-red-700'},
+    {color: 'gray', class:'bg-gray-200 text-gray-700'},
+    {color: 'pink', class:'bg-pink-200 text-pink-700'},
+    {color: 'purple', class:'bg-purple-200 text-purple-700'},
+    {color: 'orange', class:'bg-orange-200 text-orange-700'}
+  ].filter(item =>
+    item.color === color
+  )
+  return theme[0].class.toString()
 }
 
 const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
@@ -44,11 +64,12 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   description,
   images,
   startDate,
-  endDate
+  endDate,
+  ...props
 }) => {
   return (
     <section className='bg-gray-200 dark:bg-gray-800 p-5 rounded-lg'>
-      <div className='flex flex-row justify-between gap-3'>
+      <div className='md:flex flex-row justify-between gap-3 hidden'>
         {
           images.map((object: {alt: string, image: string}, i: number) =>
             <Image
@@ -67,9 +88,36 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
           )
         }
       </div>
+      <div className='flex flex-row md:hidden'>
+        <Image
+          className="rounded-lg"
+          src={`${images[0].image}`}
+          alt={images[0].alt}
+          width={150}
+          height={150}
+          style={{
+            minWidth: '100%',
+            height: '200px',
+            objectFit: "cover"
+          }}
+          />
+      </div>
       <h3 className='mb-0'>{role} @ <a href={source} className='uppercase'>{company}</a></h3>
       <p className='text-xs text-gray-400 dark:text-gray-400 uppercase'>{startDate} - {endDate}</p>
-        <p>{description}</p>
+      <div className=''>
+          {
+            props.tags?.map((object: {label: string, color: string}, i: number) =>
+            <div
+            className={cn(`cursor-pointer text-xs inline-flex items-center font-bold leading-sm uppercase px-2 rounded-sm mr-2 hover:-translate-y-1 transition-all ${TagTheme(object.color)}`
+            )}
+            key={i}
+            >
+                {object.label}
+              </div>
+            )
+          }
+      </div>
+      <p>{description}</p>
   </section>
   )
 }
