@@ -31,12 +31,12 @@ export default function Footer() {
           >
             About
           </Link>
-          {/* <Link
-            href="/newsletter"
+          <Link
+            href="/dashboard"
             className="text-gray-400 hover:text-gray-700 transition"
           >
-            Newsletter
-          </Link> */}
+            Dashboard
+          </Link>
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/matheusgomes062">

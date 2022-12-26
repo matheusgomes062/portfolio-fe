@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Analytics from '@/components/metrics/Analytics';
+// import Analytics from '@/components/metrics/Analytics';
 import Container from '@/components/Container';
 import GitHub from '@/components/metrics/Github';
 import TopTracks from '@/components/TopTracks';
@@ -19,7 +19,7 @@ export default function Dashboard() {
           <p className="text-gray-600 dark:text-gray-400 mb-4">
             This is my personal dashboard, built with Next.js API routes
             deployed as serverless functions. I use this dashboard to track
-            various metrics across platforms like GitHub and Analytics. Want to build your own? Check out my&nbsp;
+            various metrics across platforms like GitHub and Analytics. Want to build your own? Check out this&nbsp;
             <Link
               href="/blog/fetching-data-with-swr"
               className="text-gray-900 dark:text-gray-100 underline"
@@ -29,7 +29,7 @@ export default function Dashboard() {
           </p>
         </div>
         <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
-          <Analytics />
+          {/* <Analytics /> */}
           <GitHub />
         </div>
         <h2 className="font-bold text-3xl tracking-tight mb-4 mt-16 text-black dark:text-white">
