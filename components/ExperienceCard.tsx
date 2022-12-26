@@ -68,7 +68,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   ...props
 }) => {
   return (
-    <section className='shadow-2xl dark:shadow-none dark:bg-gray-800 p-5 rounded-lg'>
+    <section className='shadow-2xl dark:shadow-none dark:bg-gray-800 p-5 rounded-lg border border-gray-200 dark:border-gray-800'>
       <div className='md:flex flex-row justify-between gap-3 hidden'>
         {
           images.map((object: {alt: string, image: string}, i: number) =>
