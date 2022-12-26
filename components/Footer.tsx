@@ -51,12 +51,6 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          {/* <Link
-            href="/uses"
-            className="text-gray-400 hover:text-gray-700 transition"
-          >
-            Uses
-          </Link> */}
           <Link
             href="/guestbook"
             className="text-gray-400 hover:text-gray-700 transition"
