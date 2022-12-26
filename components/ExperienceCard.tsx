@@ -74,7 +74,7 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
           images.map((object: {alt: string, image: string}, i: number) =>
             <Image
               key={i}
-              className="rounded-lg md:self-center even:w-[50%]"
+              className="rounded-lg md:self-center even:w-[50%] border border-gray-200 dark:border-gray-800"
               src={`${object.image}`}
               alt={object.alt}
               width={150}
