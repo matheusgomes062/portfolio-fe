@@ -1,4 +1,3 @@
-import Hello from '@/components/Hello';
 import Projects from '@/components/Projects';
 import Welcome from '@/components/Welcome';
 import { Suspense } from 'react';

@@ -65,14 +65,14 @@ export default function MobileMenu() {
               Guestbook
             </Link>
           </li> */}
-          {/* <li
+          <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '200ms' }}
           >
             <Link href="/dashboard" className="flex w-auto pb-4 justify-end">
               Dashboard
             </Link>
-          </li> */}
+          </li>
           {/* <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:dark:text-transparent hover:dark:bg-clip-text hover:dark:bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-500 dark:to-purple-500"
             style={{ transitionDelay: '250ms' }}
