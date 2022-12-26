@@ -15,7 +15,7 @@ export default function Welcome() {
         </div>
         
         <Image
-          className="rounded-xl md:self-center hidden md:block"
+          className="rounded-xl md:self-center hidden md:block hover:-translate-y-1 transition-all cursor-pointer"
           src="/profile-pic.png"
           alt="Avatar"
           height={150} // Desired size with correct aspect ratio

@@ -14,25 +14,25 @@ export default function About() {
           <h2>Socials</h2>
           <div className='list-none flex flex-row justify-start gap-3 flex-wrap'>
             <a href="https://github.com/matheusgomes062">
-              <FaGithubSquare className='w-11 h-11'/>
+              <FaGithubSquare className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="https://twitter.com/matheusgomes062">
-              <FaTwitterSquare className='w-11 h-11'/>
+              <FaTwitterSquare className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="https://www.linkedin.com/in/matheus-gomes-dev/">
-              <FaLinkedin className='w-11 h-11'/>
+              <FaLinkedin className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="https://dev.to/matheusgomes062">
-              <FaDev className='w-11 h-11'/>
+              <FaDev className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="https://mgodev.hashnode.dev/">
-              <SiHashnode className='w-11 h-11'/>
+              <SiHashnode className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="https://matheusgomes062.medium.com/">
-              <FaMedium className='w-11 h-11'/>
+              <FaMedium className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
             <a href="mailto: matheusgomes062@gmail.com">
-              <SiGmail className='w-11 h-11'/>
+              <SiGmail className='w-8 h-8 md:w-11 md:h-11'/>
             </a>
           </div>
           <section>

@@ -72,8 +72,8 @@ export default function Projects() {
                 {label: "markdown", color: "blue"},
                 {label: "Git", color: "gray"},
                 {label: "Brazil", color: "green"},
-                {label: "Git", color: "gray"},
                 {label: "Book", color: "purple"},
+                {label: "Writing", color: "orange"},
               ]
             } 
             summary="Book intended to teach and be a guide about Markdown. Written in Markdown about Markdown and made available for free!"/>
