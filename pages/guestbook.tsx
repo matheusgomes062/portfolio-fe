@@ -1,6 +1,6 @@
-import prisma from '../lib/prisma';
 import Container from '@/components/Container';
 import Guestbook from '@/components/Guestbook';
+import prisma from '../lib/prisma';
 
 export default function GuestbookPage({ fallbackData }: { fallbackData: any }) {
   return (
@@ -29,7 +29,7 @@ export async function getStaticProps() {
     }
   });
 
-  const fallbackData = entries.map((entry) => ({
+  const fallbackData = entries.map((entry): { id: string; body: string; created_by: string; updated_at: string; } => ({
     id: entry.id.toString(),
     body: entry.body,
     created_by: entry.created_by.toString(),

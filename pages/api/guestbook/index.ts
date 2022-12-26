@@ -14,7 +14,7 @@ export default async function handler(
     });
 
     return res.json(
-      entries.map((entry: any) => ({
+      entries.map((entry): { id: string; body: string; created_by: string; updated_at: Date; } => ({
         id: entry.id.toString(),
         body: entry.body,
         created_by: entry.created_by,
