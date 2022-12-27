@@ -16,7 +16,7 @@ export default function App({
   pageProps: { session, ...pageProps } }: AppProps
   ){
   return (
-    <SessionProvider session={session}>
+    <SessionProvider session={pageProps.session}>
       <ThemeProvider attribute="class">
         <main className={`${rubik.variable} font-sans`}>
           <Component {...pageProps} />

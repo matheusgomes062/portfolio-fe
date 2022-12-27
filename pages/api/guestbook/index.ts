@@ -14,7 +14,7 @@ export default async function handler(
     });
 
     return res.json(
-      entries.map((entry: any) => ({
+      entries.map((entry) => ({
         id: entry.id.toString(),
         body: entry.body,
         created_by: entry.created_by,
@@ -35,7 +35,7 @@ export default async function handler(
       data: {
         email,
         body: (req.body.body || '').slice(0, 500),
-        created_by: name
+        created_by: name || "unable to get the name"
       }
     });
 
