@@ -12,7 +12,7 @@ const Posts: FunctionComponent = ({
         <Post title="How to increase your rendering performance by 70% in Vue.js" link="https://dev.to/matheusgomes062/how-to-increase-your-rendering-performance-by-70-in-vue-js-4dia" views={11604}/>
         <Post title="How to make a form handling with vuex" link="https://dev.to/matheusgomes062/how-to-make-a-form-handling-with-vuex-6g0" views={9129}/>
       </div>
-      <SmartLink label="View more posts" link="#" icon="seeMore"/>
+      <SmartLink label="View more posts" link={'/posts'} icon="seeMore"/>
     </section>
   );
 }

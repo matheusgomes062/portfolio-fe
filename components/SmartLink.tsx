@@ -1,5 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import cn from 'classnames';
+import Link from 'next/link';
 
 
 interface SmartLinkProps {
@@ -31,10 +32,10 @@ const SmartLink: FunctionComponent<SmartLinkProps> = ({
 }) => {
   return (
       <div className='flex self-start mt-5 font-normal text-gray-400 dark:text-gray-400 first-line hover:text-gray-700 hover:dark:text-gray-200 transform transition-all'>
-        <a href='#' className='flex flex-row items-center'>
+        <Link href={link} className='flex flex-row items-center'>
           {label}
           {icon && IconSelector(icon)}
-        </a>
+        </Link>
       </div>
   )
 }

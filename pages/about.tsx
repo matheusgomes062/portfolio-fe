@@ -39,6 +39,46 @@ export default function About() {
             <h2>My journey</h2>
             <ExperienceCard
               role="Sr. Software Engineer"
+              company='PAIRIN'
+              source="https://www.pairin.com/"
+              description="Responsible for designing, developing, and maintaining software applications used in the company's talent assessment and development products. This could include developing new features, fixing bugs, and optimizing existing software to ensure it meets the needs of Pairin's clients. Developing using PHP, Laravel and Docker, building features for the whole set of Pairin's clients. Some of the features included revamping the site sidebar. Adjusting the mobile responsiveness and also the accessibility color contrast criteria improving user experience."
+                images={[
+                  {
+                    alt: "PAIRIN LOGO",
+                    image: "/pairin-logo.png"
+                  },
+                  {
+                    alt: "Pairin website",
+                    image: "/pairin-website.png"
+                  },
+                  {
+                    alt: "UCLA presentation",
+                    image: "/denver-colorado.png"
+                  }
+                ]}
+              startDate="01/2023"
+              endDate='Present'
+              tags={
+                [
+                  {label: "PHP", color: "blue"},
+                  {label: "Javascript", color: "yellow"},
+                  {label: "HTML", color: "pink"},
+                  {label: "React", color: "blue"},
+                  {label: "Laravel", color: "orange"},
+                  {label: "Scss", color: "pink"},
+                  {label: "Git", color: "gray"},
+                  {label: "Docker", color: "blue"},
+                  {label: "Jira", color: "blue"},
+                  {label: "Figma", color: "pink"},
+                  {label: "Code Review", color: "orange"},
+                  {label: "English", color: "gray"},
+                  {label: "Documentation", color: "pink"},
+                ]
+              } 
+            />
+            <div className='border-b border-gray-300 dark:border-gray-700 my-7'/>
+            <ExperienceCard
+              role="Sr. Software Engineer"
               company='UCLA'
               source="https://ucla.edu"
               description="Worked with the University of California at Los Angeles to create a new library access page. The components were initially developed with the intention of being hard coded and then we changed the focus to develop the components as a library and reuse in other applications using rollup and vue 2. I also worked on the UCLA MEAP website, one of the most important pages in the university library."

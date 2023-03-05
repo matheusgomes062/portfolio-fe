@@ -78,7 +78,7 @@ export default function Projects() {
             } 
             summary="Book intended to teach and be a guide about Markdown. Written in Markdown about Markdown and made available for free!"/>
       </div>
-      <SmartLink label="View more projects" link="#" icon="seeMore"/>
+      <SmartLink label="View more projects" link="/projects" icon="seeMore"/>
     </section>
   );
 }
