@@ -51,7 +51,7 @@ export default function Footer() {
           </ExternalLink>
         </div>
         <div className="flex flex-col space-y-4">
-          <Link
+          {/* <Link
             href="/guestbook"
             className="text-gray-400 hover:text-gray-700 transition"
           >
@@ -62,7 +62,7 @@ export default function Footer() {
             className="text-gray-400 hover:text-gray-700 transition"
           >
             Snippets
-          </Link>
+          </Link> */}
           <Link
             href="/tweets"
             className="text-gray-400 hover:text-gray-700 transition"

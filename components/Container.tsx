@@ -109,7 +109,7 @@ export default function Container(props: any) {
             <NavItem href="/" text="Home" />
             <NavItem href="/about" text="About" />
             {/* <NavItem href="/guestbook" text="Guestbook" /> */}
-            {/* <NavItem href="/dashboard" text="Dashboard" /> */}
+            <NavItem href="/dashboard" text="Dashboard" />
             {/* 
             <NavItem href="/blog" text="Blog" />
             <NavItem href="/snippets" text="Snippets" /> */}
