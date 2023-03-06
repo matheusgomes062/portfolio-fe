@@ -21,14 +21,11 @@
 }
 
 .menu {
-  padding: 0 28px 0 4px;
   margin: 0;
   padding-top: 24px;
-  width: 100%;
   height: 100vh;
   z-index: 1000;
   opacity: 0;
-  left: 0;
   transition: opacity 300ms ease, transform 300ms ease;
 }
 
@@ -46,7 +43,7 @@
 }
 
 .menuRendered li {
-  @apply border-gray-200 dark:border-gray-600 w-full;
+  @apply border-gray-600 dark:border-gray-600 w-full;
   transform: translateX(0);
   opacity: 1;
 }
