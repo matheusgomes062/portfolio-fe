@@ -1,45 +1,8 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
-import { FaDev, FaGithub, FaLinkedinIn, FaMediumM } from 'react-icons/fa';
-import { HiExternalLink } from 'react-icons/hi';
-import Button from './Button';
 import cn from 'classnames';
+import {IExperienceCardProps} from '../types/IExperienceCardProps'
 
-
-interface ExperienceCardProps {
-  /**
-   * Role when working on the company
-   */
-  role: string;
-  /**
-   * Company name
-   */
-  company: string;
-  /**
-   * Company link source
-   */
-  source?: string;
-  /**
-   * Description for the experience
-   */
-  description: string;
-  /**
-   * Array of images
-   */
-  images: Array<{alt: string, image: string}>;
-  /**
-   * startDate for your experience
-   */
-  startDate: string;
-  /**
-   * startDate for your experience
-   */
-  endDate: string;
-  /**
-   * Tags with label and color to show in the card
-   */
-  tags?: Array<{label: string, color: string}>;
-}
 
 function TagTheme(color: string) {
   const theme = [
@@ -57,7 +20,8 @@ function TagTheme(color: string) {
   return theme[0].class.toString()
 }
 
-const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
+
+const ExperienceCard: FunctionComponent<IExperienceCardProps> = ({
   role,
   company,
   source,
@@ -67,27 +31,73 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({
   endDate,
   ...props
 }) => {
+  const [showImageModal, setShowImageModal] = useState('');
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    let handler = (e: any) => {
+      if(!imageRef.current?.contains(e.target)) {
+        setShowImageModal('');
+        setIsModalOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handler);
+
+    return() => {
+      document.removeEventListener('mousedown', handler)
+    }
+  })
+
+  const ImageModal = ({src}: {src: string}) => {
+    return (
+      <div id="myModal" className={`${isModalOpen ? 'block': 'hidden'} fixed z-1 pt-24 left-0 top-0 w-full h-full overflow-auto bg-black bg-opacity-70`} 
+      tabIndex={-1}
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+        <Image
+          ref={imageRef}
+          src={src}
+          width={700}
+          height={700}
+          className="m-auto block w-4/5 max-w-3xl animate-fade-in-up rounded-lg"
+          style={{margin: 'auto'}}
+          alt=""/>
+        <div id="caption" className="m-auto block w-4/5 max-w-3xl text-center text-white py-3 h-36"></div>
+      </div>
+    )
+  }
+    
   return (
     <section className='shadow-2xl dark:shadow-none dark:bg-gray-800 p-5 rounded-lg border border-gray-200 dark:border-gray-800'>
       <div className='md:flex flex-row justify-between gap-3 hidden'>
         {
-          images.map((object: {alt: string, image: string}, i: number) =>
-            <Image
-              key={i}
-              className="rounded-lg md:self-center even:w-[50%] border border-gray-200 dark:border-gray-800"
-              src={`${object.image}`}
-              alt={object.alt}
-              width={150}
-              height={150}
-              style={{
-                minWidth: '22%',
-                height: '100px',
-                objectFit: "cover"
-              }}
-              />
+          images.map((object: {alt: string, image: string}, i: number) => {
+            return (
+              <>
+                <Image
+                  key={i}
+                  className="rounded-lg md:self-center even:w-[50%] border border-gray-200 dark:border-gray-800 cursor-pointer"
+                  src={`${object.image}`}
+                  alt={object.alt}
+                  width={150}
+                  height={150}
+                  style={{
+                    minWidth: '22%',
+                    height: '100px',
+                    objectFit: "cover"
+                  }}
+                  onClick={() => {setShowImageModal(object.image); setIsModalOpen(true)}}
+                />
+              </>
+              )
+            }
           )
         }
       </div>
+      <ImageModal src={showImageModal}/>
       <div className='flex flex-row md:hidden'>
         <Image
           className="rounded-lg"

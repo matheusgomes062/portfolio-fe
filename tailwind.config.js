@@ -33,10 +33,43 @@ module.exports = {
           '50%': { transform: 'rotate(10.0deg)' },
           '60%': { transform: 'rotate( 0.0deg)' },
           '100%': { transform: 'rotate( 0.0deg)' }
+        },
+        fadeInUp: {
+            '0%': {
+                opacity: '0',
+                transform: 'translateY(10px)'
+            },
+            '100%': {
+                opacity: '1',
+                transform: 'translateY(0)'
+            },
+        },
+        fadeInDown: {
+          '0%': {
+              opacity: '0',
+              transform: 'translateY(-10px)'
+          },
+          '100%': {
+              opacity: '1',
+              transform: 'translateY(0)'
+          },
+        },
+        fadeOutUp: {
+            'from': {
+                opacity: '1',
+                transform: 'translateY(0px)'
+            },
+            'to': {
+                opacity: '0',
+                transform: 'translateY(10px)',
+            },
         }
       },
       animation: {
-        'shake-hands': 'shakeHands 2s ease-in-out infinite'
+        'shake-hands': 'shakeHands 2s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 0.5s ease-out',
+        'fade-in-down': 'fadeInDown 0.5s ease-out',
+        'fade-out-up': 'fadeOutUp 0.5s ease-out'
       },
       typography: (theme) => ({
         DEFAULT: {
