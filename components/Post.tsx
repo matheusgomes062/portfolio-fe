@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { AiOutlineEye } from 'react-icons/ai';
+import { AiOutlineArrowRight, AiOutlineEye } from 'react-icons/ai';
 
 
 interface PostProps {
@@ -29,7 +29,10 @@ const Post: FunctionComponent<PostProps> = ({
             <AiOutlineEye/>
             <p className='ml-2'>{views}</p>
           </div>
-
+          <a href={link} className='font-semibold text-4xl md:text-4xl flex'>
+            <AiOutlineArrowRight className='absolute right-5 bottom-5 text-4xl'/>
+          </a>
+          
       </div>
   )
 }
