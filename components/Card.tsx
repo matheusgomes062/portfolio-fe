@@ -28,9 +28,13 @@ interface CardProps {
    */
   tags?: Array<{label: string, color: string}>;
   /**
-   * Tags with label and color to show in the card
+   * Summary of the project
    */
   summary: string;
+  /**
+   * Is the project a work in progress
+   */
+  wip?: boolean;
 }
 
 function BannerProject({source}: {source: string | undefined}) {
@@ -73,12 +77,14 @@ const Card: FunctionComponent<CardProps> = ({
   externalLink,
   githubLink,
   summary,
+  wip,
   ...props
 }) => {
   return (
     <div className="relative group transform hover:scale-[1.01] transition-all">
       <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
     <div className="sm:w-full h-auto md:h-[28rem] bg-zinc-100 rounded-lg drop-shadow-xl dark:bg-gray-800 dark:border-gray-700 ring-1 ring-gray-900/5">
+        {wip && <div className="absolute top-1 right-1 bg-red-500 text-white text-xs font-bold py-1 px-4 rounded-lg rounded-bl-lg">WIP</div>}
         <a href={externalLink || githubLink}>
           <BannerProject source={source}/>
         </a>

@@ -1,6 +1,6 @@
-import { url } from "inspector";
 import Image from "next/image";
 import Hello from "./Hello";
+import Button from './Button';
 
 export default function Welcome() {
   return (
@@ -24,8 +24,11 @@ export default function Welcome() {
       </div>
       <button
         className="flex items-center justify-center px-10 py-3 font-medium bg-blue-500 dark:bg-blue-500 text-gray-100 rounded-lg shadow-blue-900 shadow-lg active:shadow-none active:scale-95 hover:bg-blue-800 dark:hover:bg-blue-800 hover:text-white dark:hover:text-white disabled:bg-gray-400/80 disabled:shadow-none disabled:cursor-not-allowed transition-colors duration-200"
+        onClick={() => {
+          window.open("/MatheusGomesCV.pdf", "_blank")
+        }}
       >
-        Curriculum
+        My CV
       </button>
     </section>
   );

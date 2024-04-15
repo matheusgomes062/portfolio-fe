@@ -62,13 +62,13 @@ export default function Footer() {
             className="text-gray-400 hover:text-gray-700 transition"
           >
             Snippets
-          </Link> */}
+          </Link>
           <Link
             href="/tweets"
             className="text-gray-400 hover:text-gray-700 transition"
           >
             Tweets
-          </Link>
+          </Link> */}
         </div>
       </div>
       <p>Made with ❤️ by Matheus Gomes</p>

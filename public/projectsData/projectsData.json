@@ -1,0 +1,133 @@
+[
+    {
+        "title": "Analisa meu CV",
+        "tags": [
+          {"label": "Next", "color": "green"},
+          {"label": "React", "color": "blue"},
+          {"label": "Prisma", "color": "blue"},
+          {"label": "Git", "color": "gray"},
+          {"label": "tRPC", "color": "red"},
+          {"label": "Tailwindcss", "color": "blue"},
+          {"label": "Vercel", "color": "gray"},
+          {"label": "Stripe", "color": "purple"},
+          {"label": "shadcn-ui", "color": "blue"},
+          {"label": "Pinecone", "color": "green"},
+          {"label": "TypeScript", "color": "blue"}
+        ],
+        "summary": "This is a real estate listing web application created using Laravel, Vue, Inertia & Tailwind. From the course of Piotr Jura.",
+        "wip": true
+    },
+      {
+      "title": "LaraZillow",
+      "githubLink": "https://github.com/matheusgomes062/larazillow",
+      "source": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "tags": [
+        {"label": "Vue3", "color": "green"},
+        {"label": "Javascript", "color": "yellow"},
+        {"label": "Vite", "color": "purple"},
+        {"label": "Tailwindcss", "color": "blue"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Laravel", "color": "red"},
+        {"label": "Php", "color": "blue"},
+        {"label": "Vercel", "color": "gray"},
+        {"label": "Docker", "color": "blue"},
+        {"label": "Inertia", "color": "blue"},
+        {"label": "Eloquent ORM", "color": "red"}
+      ],
+      "summary": "This is a real estate listing web application created using Laravel, Vue, Inertia & Tailwind. From the course of Piotr Jura."
+    },
+    {
+      "title": "PARA Resiliencia",
+      "githubLink": "https://github.com/matheusgomes062/PARA-resiliencia",
+      "source": "https://user-images.githubusercontent.com/47605309/155584050-fe6039f7-2616-4fab-9403-ba7b7743d8f4.png",
+      "tags": [
+        {"label": "Vue.js", "color": "green"},
+        {"label": "Bootstrap", "color": "blue"},
+        {"label": "Figma", "color": "purple"},
+        {"label": "Sass", "color": "pink"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Vercel", "color": "gray"}
+      ],
+      "summary": "Project coordinated by university professors and master degree students. Architecture and development of the front-end made by me."
+    },
+    {
+      "title": "Portfolio - mgodev",
+      "externalLink": "https://mgodev-next.vercel.app/",
+      "githubLink": "https://github.com/matheusgomes062/portfolio-fe",
+      "source": "https://user-images.githubusercontent.com/47605309/209061871-90fa5ebc-0a87-4b44-b1bc-f2fd8d13df90.png",
+      "tags": [
+        {"label": "Next.js", "color": "gray"},
+        {"label": "Edge", "color": "orange"},
+        {"label": "Typescript", "color": "blue"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Turbopack", "color": "red"},
+        {"label": "Tailwindcss", "color": "blue"},
+        {"label": "Prisma", "color": "yellow"},
+        {"label": "Vercel", "color": "gray"},
+        {"label": "Spotify-API", "color": "green"},
+        {"label": "PlanetScale", "color": "gray"}
+      ],
+      "summary": "Project coordinated by university professors and master degree students. Architecture and development of the front-end made by me."
+    },
+    {
+      "title": "The Markdown Guide",
+      "externalLink": "https://drive.google.com/file/d/18sS8Pb7p22uRgDwFTOh1kI4VaVSWDy9Y/view",
+      "githubLink": "https://github.com/matheusgomes062/guia-markdown",
+      "source": "https://user-images.githubusercontent.com/47605309/155583890-adb2059d-f0fc-43e5-814c-e3963fbe6501.png",
+      "tags": [
+        {"label": "markdown", "color": "blue"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Brazil", "color": "green"},
+        {"label": "Book", "color": "purple"},
+        {"label": "Writing", "color": "orange"}
+      ],
+      "summary": "Book intended to teach and be a guide about Markdown. Written in Markdown about Markdown and made available for free!"
+    },
+    {
+      "title": "Ouvimed",
+      "githubLink": "https://github.com/matheusgomes062/ouvimed",
+      "source": "/../public/ouvimed.png",
+      "tags": [
+        {"label": "json", "color": "yellow"},
+        {"label": "Git", "color": "gray"},
+        {"label": "React-native", "color": "green"},
+        {"label": "Expo", "color": "gray"},
+        {"label": "Research", "color": "pink"},
+        {"label": "Figma", "color": "purple"}
+      ],
+      "summary": "Ouvimed is a mobile application leveraging acoustic audio data from heart and lung sounds to assist medical professionals in diagnosing health issues."
+    },
+    {
+      "title": "Old Portfolio",
+      "externalLink": "https://mgodev.vercel.app/",
+      "githubLink": "https://github.com/matheusgomes062/mgodev",
+      "source": "/../public/old_portfolio.png",
+      "tags": [
+        {"label": "Typescript", "color": "blue"},
+        {"label": "Scss", "color": "pink"},
+        {"label": "Vercel", "color": "gray"},
+        {"label": "Vue 3", "color": "green"},
+        {"label": "Javascript", "color": "gray"},
+        {"label": "i18n", "color": "orange"},
+        {"label": "pug", "color": "purple"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Prism", "color": "blue"},
+        {"label": "Vite", "color": "yellow"}
+      ],
+      "summary": "My old portfolio made with Vue 3, Vite, Typescript, Scss, i18n, pug, Prism and deployed on Vercel."
+    },
+    {
+      "title": "Americanas Indica",
+      "githubLink": "https://github.com/matheusgomes062/hackathonAmericanas",
+      "source": "/../public/americanasindica.png",
+      "tags": [
+        {"label": "Javascript", "color": "gray"},
+        {"label": "Git", "color": "gray"},
+        {"label": "Html", "color": "pink"},
+        {"label": "Css", "color": "purple"},
+        {"label": "Hackathon", "color": "green"}
+      ],
+      "summary": "Solution for Summit Hack - Americanas, promoted by Shawee! Here we have some features, namely: 'Surprise me', 'Méri, virtual assistant' and 'Gift your friends'."
+    }
+  ]
+  
