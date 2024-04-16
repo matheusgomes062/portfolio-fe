@@ -13,7 +13,7 @@ dependencies:
     version: 13.5.6
   '@prisma/client':
     specifier: ^4.7.1
-    version: 4.16.2(prisma@4.16.2)
+    version: 4.16.2
   '@tinacms/cli':
     specifier: ^1.5.43
     version: 1.5.43(@babel/core@7.24.4)(@types/node@18.11.13)(@types/react-dom@18.0.9)(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0)
@@ -77,9 +77,6 @@ dependencies:
   swr:
     specifier: ^2.0.0
     version: 2.2.5(react@18.2.0)
-  tinacms:
-    specifier: ^1.6.1
-    version: 1.6.1(@babel/core@7.24.4)(@types/react-dom@18.0.9)(@types/react@18.0.26)(react-dom@18.2.0)(react@18.2.0)
   typescript:
     specifier: 4.9.4
     version: 4.9.4
@@ -97,9 +94,6 @@ devDependencies:
   postcss:
     specifier: ^8.4.20
     version: 8.4.38
-  prisma:
-    specifier: ^4.7.1
-    version: 4.16.2
   tailwindcss:
     specifier: ^3.2.4
     version: 3.4.3
@@ -1796,7 +1790,7 @@ packages:
       '@prisma/client': '>=2.26.0 || >=3'
       next-auth: ^4
     dependencies:
-      '@prisma/client': 4.16.2(prisma@4.16.2)
+      '@prisma/client': 4.16.2
       next-auth: 4.24.7(next@13.0.6)(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -1959,7 +1953,7 @@ packages:
     requiresBuild: true
     optional: true
 
-  /@prisma/client@4.16.2(prisma@4.16.2):
+  /@prisma/client@4.16.2:
     resolution: {integrity: sha512-qCoEyxv1ZrQ4bKy39GnylE8Zq31IRmm8bNhNbZx7bF2cU5aiCCnSa93J2imF88MBjn7J9eUQneNxUQVJdl/rPQ==}
     engines: {node: '>=14.17'}
     requiresBuild: true
@@ -1970,16 +1964,11 @@ packages:
         optional: true
     dependencies:
       '@prisma/engines-version': 4.16.1-1.4bc8b6e1b66cb932731fb1bdbbc550d1e010de81
-      prisma: 4.16.2
     dev: false
 
   /@prisma/engines-version@4.16.1-1.4bc8b6e1b66cb932731fb1bdbbc550d1e010de81:
     resolution: {integrity: sha512-q617EUWfRIDTriWADZ4YiWRZXCa/WuhNgLTVd+HqWLffjMSPzyM5uOWoauX91wvQClSKZU4pzI4JJLQ9Kl62Qg==}
     dev: false
-
-  /@prisma/engines@4.16.2:
-    resolution: {integrity: sha512-vx1nxVvN4QeT/cepQce68deh/Turxy5Mr+4L4zClFuK1GlxN3+ivxfuv+ej/gvidWn1cE1uAhW7ALLNlYbRUAw==}
-    requiresBuild: true
 
   /@radix-ui/primitive@1.0.1:
     resolution: {integrity: sha512-yQ8oGX2GVsEYMWGxcovu1uGWPCxV5BFfeeYxqPmuAzUyLT9qmaMXSAhXpb0WrspIeqYzdJpkh2vHModJPgRIaw==}
@@ -12289,14 +12278,6 @@ packages:
       clsx: 2.1.0
       react: 18.2.0
     dev: false
-
-  /prisma@4.16.2:
-    resolution: {integrity: sha512-SYCsBvDf0/7XSJyf2cHTLjLeTLVXYfqp7pG5eEVafFLeT0u/hLFz/9W196nDRGUOo1JfPatAEb+uEnTQImQC1g==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      '@prisma/engines': 4.16.2
 
   /prismjs@1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
