@@ -5,8 +5,9 @@
   import { useTina } from 'tinacms/dist/react'
   import { TinaMarkdown } from 'tinacms/dist/rich-text'
   import client from '../../../.tina/__generated__/client'
+import { ReactElement, JSXElementConstructor, ReactFragment, ReactPortal } from 'react'
   
-  const BlogPage = (props) => {
+  const BlogPage = (props: { query: any; variables: any; data: any }) => {
     const { data } = useTina({
       query: props.query,
       variables: props.variables,
@@ -52,7 +53,7 @@
     )
   }
   
-  export const getStaticProps = async ({ params }) => {
+  export const getStaticProps = async ({ params }: { params: any }) => {
     let data = {}
     let query = {}
     let variables = { relativePath: `${params.filename}.md` }
@@ -79,8 +80,8 @@
     const postsListData = await client.queries.postConnection()
   
     return {
-      paths: postsListData.data.postConnection.edges.map((post) => ({
-        params: { filename: post.node._sys.filename },
+      paths: postsListData?.data?.postConnection?.edges?.map((post) => ({
+        params: { filename: post?.node?._sys?.filename },
       })),
       fallback: false,
     }
@@ -88,7 +89,7 @@
   
   export default BlogPage
   
-  const PageSection = (props) => {
+  const PageSection = (props: { heading: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined; content: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | ReactFragment | ReactPortal | null | undefined }) => {
     return (
       <>
         <h2>{props.heading}</h2>
@@ -101,7 +102,7 @@
     PageSection: PageSection,
   }
   
-  const ContentSection = ({ content }) => {
+  const ContentSection = ({ content }: { content: any }) => {
     return (
       <div className="relative py-16 bg-white overflow-hidden">
         <div className="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
