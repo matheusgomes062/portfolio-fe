@@ -14,7 +14,7 @@
           {"label": "Pinecone", "color": "green"},
           {"label": "TypeScript", "color": "blue"}
         ],
-        "summary": "This is a real estate listing web application created using Laravel, Vue, Inertia & Tailwind. From the course of Piotr Jura.",
+        "summary": "WIP. Project for analyzing my CV and giving feedback using AI. It's a fullstack project using Next.js, Prisma, tRPC, Tailwindcss, Stripe, shadcn-ui, Pinecone and TypeScript.",
         "wip": true
     },
       {
