@@ -5,8 +5,8 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 export default defineConfig({
   branch,
-  clientId: process.env.TINACMS_CLIENTID || null, // Get this from tina.io
-  token: process.env.TINACMS_TOKEN|| null, // Get this from tina.io
+  clientId: "2d554b8d-a31f-49da-ae86-cf5821da0166", // Get this from tina.io
+  token: "129ce6e1d9e5d092ef2b77125dd3e91aa3981d4d", // Get this from tina.io
   build: {
     outputFolder: "admin",
     publicFolder: "public",
@@ -20,32 +20,29 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        label: 'Experiences',
-        name: 'experience',
-        path: 'content/experiences',
+        name: "post",
+        label: "Posts",
+        path: "content/posts",
         fields: [
           {
-            type: 'string',
-            label: 'Role',
-            name: 'role',
+            type: "string",
+            name: "title",
+            label: "Title",
+            isTitle: true,
+            required: true,
           },
           {
-            type: 'string',
-            label: 'Company',
-            name: 'company',
+            type: "rich-text",
+            name: "body",
+            label: "Body",
+            isBody: true,
           },
-          {
-            type: 'string',
-            label: 'Company URL',
-            name: 'company_url',
-          },
-          {
-            type: 'image',
-            label: 'Image',
-            name: 'image',
-          }
-        ]
-      }
+        ],
+        ui: {
+          // This is an DEMO router. You can remove this to fit your site
+          router: ({ document }) => `/demo/blog/${document._sys.filename}`,
+        },
+      },
     ],
   },
 });
