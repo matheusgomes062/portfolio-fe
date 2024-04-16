@@ -57,15 +57,11 @@
       "source": "https://user-images.githubusercontent.com/47605309/209061871-90fa5ebc-0a87-4b44-b1bc-f2fd8d13df90.png",
       "tags": [
         {"label": "Next.js", "color": "gray"},
-        {"label": "Edge", "color": "orange"},
         {"label": "Typescript", "color": "blue"},
         {"label": "Git", "color": "gray"},
-        {"label": "Turbopack", "color": "red"},
         {"label": "Tailwindcss", "color": "blue"},
-        {"label": "Prisma", "color": "yellow"},
         {"label": "Vercel", "color": "gray"},
-        {"label": "Spotify-API", "color": "green"},
-        {"label": "PlanetScale", "color": "gray"}
+        {"label": "Spotify-API", "color": "green"}
       ],
       "summary": "Project coordinated by university professors and master degree students. Architecture and development of the front-end made by me."
     },
