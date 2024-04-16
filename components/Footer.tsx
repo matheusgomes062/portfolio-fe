@@ -39,9 +39,6 @@ export default function Footer() {
           </Link>
         </div>
         <div className="flex flex-col space-y-4">
-          <ExternalLink href="https://twitter.com/matheusgomes062">
-            Twitter
-          </ExternalLink>
           <ExternalLink href="https://github.com/matheusgomes062">GitHub</ExternalLink>
           <ExternalLink href="https://dev.to/matheusgomes062">
             Dev.to

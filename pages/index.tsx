@@ -1,7 +1,7 @@
 import Projects from '@/components/Projects';
 import Welcome from '@/components/Welcome';
 import { Suspense } from 'react';
-import projectsData from '../public/projectsData/projectsData.json';
+import projectsData from '../public/dataJson/projectsData.json';
 
 import Container from '../components/Container';
 import Posts from '@/components/Posts';

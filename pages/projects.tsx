@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import Projects from "@/components/Projects";
-import projectsData from '../public/projectsData/projectsData.json';
+import projectsData from '../public/dataJson/projectsData.json';
 
 export default function About() {
 
