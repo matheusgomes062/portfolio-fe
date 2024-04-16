@@ -138,7 +138,7 @@ export default function Guestbook({ fallbackData }: { fallbackData: any }) {
       </div>
       <div className="mt-4 space-y-8">
         <Suspense fallback={null}>
-          {entries?.map((entry: { id: Key | null | undefined; }) => (
+          {(entries as Array<any>)?.map((entry: { id: Key | null | undefined; }) => (
             <GuestbookEntry key={entry.id} entry={entry} user={session?.user} />
           ))}
         </Suspense>
