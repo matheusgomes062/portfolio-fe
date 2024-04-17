@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react'
 import Image from 'next/image'
-import { FaDev, FaGithub, FaLinkedinIn, FaMediumM } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { HiExternalLink } from 'react-icons/hi';
 import Button from './Button';
 import cn from 'classnames';
