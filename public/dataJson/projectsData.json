@@ -82,7 +82,7 @@
     {
       "title": "Ouvimed",
       "githubLink": "https://github.com/matheusgomes062/ouvimed",
-      "source": "/ouvimed.png",
+      "source": "/images/ouvimed.png",
       "tags": [
         {"label": "json", "color": "yellow"},
         {"label": "Git", "color": "gray"},
@@ -97,7 +97,7 @@
       "title": "Old Portfolio",
       "externalLink": "https://mgodev.vercel.app/",
       "githubLink": "https://github.com/matheusgomes062/mgodev",
-      "source": "/old_portfolio.png",
+      "source": "/images/old_portfolio.png",
       "tags": [
         {"label": "Typescript", "color": "blue"},
         {"label": "Scss", "color": "pink"},
@@ -115,7 +115,7 @@
     {
       "title": "Americanas Indica",
       "githubLink": "https://github.com/matheusgomes062/hackathonAmericanas",
-      "source": "/americanasindica.png",
+      "source": "/images/americanasindica.png",
       "tags": [
         {"label": "Javascript", "color": "gray"},
         {"label": "Git", "color": "gray"},
