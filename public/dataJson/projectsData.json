@@ -142,7 +142,7 @@
     "wip": true
   },
   {
-    "title": "Node API",
+    "title": "Clean Node API",
     "tags": [
       {"label": "Node", "color": "green"},
       {"label": "Jest", "color": "red"},
@@ -150,17 +150,7 @@
       {"label": "Swagger", "color": "green"},
       {"label": "Github Actions", "color": "gray"},
       {"label": "Javascript", "color": "gray"},
-      {"label": "Git", "color": "gray"},
-      {"label": "Html", "color": "pink"},
-      {"label": "Css", "color": "purple"},
-      {"label": "Algorithm", "color": "green"},
-      {"label": "React", "color": "blue"},
-      {"label": "Next.js", "color": "blue"},
-      {"label": "Tailwindcss", "color": "blue"},
-      {"label": "Clean Code/Clean Architecture", "color": "gray"},
-      {"label": "TDD/DDD", "color": "gray"},
-      {"label": "CI/CD", "color": "pink"},
-      {"label": "SOLID/DRY", "color": "orange"}
+      {"label": "Git", "color": "gray"}
     ],
     "summary": "WIP. The React Sorting Visualizer project aims to provide a dynamic and interactive way to visualize various sorting algorithms in action.",
     "wip": true
