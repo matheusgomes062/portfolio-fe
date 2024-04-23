@@ -1,23 +1,5 @@
 [
   {
-    "title": "Analisa meu CV",
-    "tags": [
-      {"label": "Next", "color": "green"},
-      {"label": "React", "color": "blue"},
-      {"label": "Prisma", "color": "blue"},
-      {"label": "Git", "color": "gray"},
-      {"label": "tRPC", "color": "red"},
-      {"label": "Tailwindcss", "color": "blue"},
-      {"label": "Vercel", "color": "gray"},
-      {"label": "Stripe", "color": "purple"},
-      {"label": "shadcn-ui", "color": "blue"},
-      {"label": "Pinecone", "color": "green"},
-      {"label": "TypeScript", "color": "blue"}
-    ],
-    "summary": "WIP. Project for analyzing my CV and giving feedback using AI. It's a fullstack project using Next.js, Prisma, tRPC, Tailwindcss, Stripe, shadcn-ui, Pinecone and TypeScript.",
-    "wip": true
-  },
-  {
     "title": "LaraZillow",
     "githubLink": "https://github.com/matheusgomes062/larazillow",
     "source": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
@@ -153,6 +135,24 @@
       {"label": "Git", "color": "gray"}
     ],
     "summary": "WIP. The React Sorting Visualizer project aims to provide a dynamic and interactive way to visualize various sorting algorithms in action.",
+    "wip": true
+  }, 
+  {
+    "title": "Analisa meu CV",
+    "tags": [
+      {"label": "Next", "color": "green"},
+      {"label": "React", "color": "blue"},
+      {"label": "Prisma", "color": "blue"},
+      {"label": "Git", "color": "gray"},
+      {"label": "tRPC", "color": "red"},
+      {"label": "Tailwindcss", "color": "blue"},
+      {"label": "Vercel", "color": "gray"},
+      {"label": "Stripe", "color": "purple"},
+      {"label": "shadcn-ui", "color": "blue"},
+      {"label": "Pinecone", "color": "green"},
+      {"label": "TypeScript", "color": "blue"}
+    ],
+    "summary": "WIP. Project for analyzing my CV and giving feedback using AI. It's a fullstack project using Next.js, Prisma, tRPC, Tailwindcss, Stripe, shadcn-ui, Pinecone and TypeScript.",
     "wip": true
   }
 ]
