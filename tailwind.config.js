@@ -63,13 +63,19 @@ module.exports = {
                 opacity: '0',
                 transform: 'translateY(10px)',
             },
+        },
+        blinking: {
+          '0%': { opacity: '1' },
+          '50%': { opacity: '0' },
+          '100%': { opacity: '1' }
         }
       },
       animation: {
         'shake-hands': 'shakeHands 2s ease-in-out infinite',
         'fade-in-up': 'fadeInUp 0.5s ease-out',
         'fade-in-down': 'fadeInDown 0.5s ease-out',
-        'fade-out-up': 'fadeOutUp 0.5s ease-out'
+        'fade-out-up': 'fadeOutUp 0.5s ease-out',
+        'blinking': 'blinking 1s infinite',
       },
       typography: (theme) => ({
         DEFAULT: {

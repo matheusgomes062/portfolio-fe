@@ -11,6 +11,7 @@ const nextConfig = {
       { loader: '@next/font/google', options: { subsets: ['latin'] } },
     ],
   },
+  transpilePackages: ['next-auth'],
   async headers() {
     return [
       {
@@ -18,7 +19,7 @@ const nextConfig = {
         headers: securityHeaders
       }
     ];
-  }
+  },
 }
 
 
