@@ -61,14 +61,20 @@ function GuestbookEntries() {
     return null;
   }
 
-  return data?.map((entry: any) => (
-    <div key={entry.id} className="flex flex-col space-y-1 mb-4">
-      <div className="w-full text-sm break-words">
-        <span className="text-neutral-600 dark:text-neutral-400 mr-1">
-          {entry.created_by}:
-        </span>
-        {entry.body}
-      </div>
-    </div>
-  ));
+  return (
+    <>
+      {
+        data?.map((entry: Guestbook) => (
+          <div key={entry.id} className="flex flex-col space-y-1 mb-4">
+            <div className="w-full text-sm break-words">
+              <span className="text-neutral-600 dark:text-neutral-400 mr-1">
+                {entry.created_by}:
+              </span>
+              {entry.body}
+            </div>
+          </div>
+        ))
+      }
+    </>
+  )
 }
