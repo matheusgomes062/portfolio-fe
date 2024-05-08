@@ -55,12 +55,13 @@ function GuestbookForm() {
 }
 
 function GuestbookEntries() {
-  const { data } = useSWR<Guestbook[]>('/api/guestbook', fetcher);
+  const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher);
 
   if (data?.length === 0) {
     return null;
   }
-
+  if (error) return <div>failed to load</div>
+  if (isLoading) return <div>loading...</div>
   return (
     <>
       {
