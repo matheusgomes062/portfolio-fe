@@ -16,7 +16,6 @@ export default function GitHubCard() {
       header="GitHub Stars"
       link={link}
       metric={stars}
-      isCurrency={false}
     />
   );
 }

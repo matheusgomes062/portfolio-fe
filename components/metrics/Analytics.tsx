@@ -9,14 +9,13 @@ export default function AnalyticsCard() {
 
   const pageViews = new Number(data?.total); //when api is working
   // const pageViews = 31415
-  const link = 'https://mgodev-next.vercel.app';
+  const link = 'https://mgomes.dev';
 
   return (
     <MetricCard
       header="All-Time Views"
       link={link}
       metric={pageViews}
-      isCurrency={false}
     />
   );
 }
