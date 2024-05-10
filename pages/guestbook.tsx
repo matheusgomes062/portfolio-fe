@@ -55,9 +55,7 @@ function GuestbookForm() {
 }
 
 function GuestbookEntries() {
-  const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher, {
-    refreshInterval: 5000 // Refresh every 5 seconds
-  });
+  const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher);
 
   if (data?.length === 0) {
     return null;
