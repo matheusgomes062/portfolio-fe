@@ -6,7 +6,6 @@ export default function Form() {
   const formRef = useRef<HTMLFormElement>(null);
   const inputEl = useRef<HTMLInputElement>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const createGuestbookEntry = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
@@ -32,7 +31,6 @@ export default function Form() {
     } finally {
       setTimeout(() => {
         setIsSubmitting(false);
-        setSubmitted(true);
       }, 2000);
     }
   };

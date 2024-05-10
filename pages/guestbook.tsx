@@ -2,12 +2,11 @@
 
 import { useSession } from "next-auth/react"
 import { SignIn, SignOut } from '@/components/guestbook/Buttons';
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import Form from '@/components/guestbook/Form';
 import Container from "@/components/Container";
 import { Guestbook } from "@prisma/client";
 import useSWR from 'swr';
-import { mutate } from 'swr';
 import fetcher from 'lib/fetcher';
 
 export const metadata = {
@@ -56,15 +55,9 @@ function GuestbookForm() {
 }
 
 function GuestbookEntries() {
-
-  const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher);
-  const [submitted, setSubmitted] = useState(false);
-
-  if(submitted) {
-    // refresh the fetcher
-    mutate('/api/guestbook');
-    setSubmitted(false);
-  }
+  const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher, {
+    refreshInterval: 5000 // Refresh every 5 seconds
+  });
 
   if (data?.length === 0) {
     return null;
