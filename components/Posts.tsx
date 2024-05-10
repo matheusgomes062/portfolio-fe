@@ -1,9 +1,13 @@
 import { FunctionComponent } from "react";
 import Post from "./Post";
-import SmartLink from "./SmartLink";
+import fetcher from "lib/fetcher";
+import useSWR from "swr";
+import { DevToArticles } from "../lib/types";
 
-const Posts: FunctionComponent = ({
-}) => {
+export default function Posts() {
+  const { data } = useSWR<DevToArticles>('/api/devto', fetcher);
+  console.log(data)
+
   return (
     <section className='flex flex-col items-center'>
       <h2 className='font-extrabold text-3xl self-start pb-5'>Featured Posts</h2>
@@ -13,9 +17,6 @@ const Posts: FunctionComponent = ({
         <Post title="How to make a form handling with vuex" link="https://dev.to/matheusgomes062/how-to-make-a-form-handling-with-vuex-6g0" views={9888}/>
         <Post title="Programming Paradigm" link="https://dev.to/matheusgomes062/programming-paradigm-2anb" views={8473}/>
       </div>
-      {/* <SmartLink label="View more posts" link={'/404'} icon="seeMore"/> */}
     </section>
   );
 }
-
-export default Posts;

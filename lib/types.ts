@@ -33,10 +33,6 @@ export type FormState = {
   message?: string;
 };
 
-export type Subscribers = {
-  count: number;
-};
-
 export type Views = {
   total: number;
 };
@@ -60,16 +56,23 @@ export type TopTracks = {
   tracks: Song[];
 };
 
-export type YouTube = {
-  subscriberCount: number;
-  viewCount: number;
-};
-
 export type GitHub = {
   stars: number;
 };
 
-export type Unsplash = {
-  downloads: number;
-  views: number;
+export type DevToArticles = {
+  type_of: string;
+  id: number;
+  title: string;
+  description: string;
+  published_at: string;
+  slug: string;
+  path: string;
+  url: string;
+  page_views_count: number;
+  published_timestamp: string;
+  positive_reactions_count: number;
+  cover_image: string;
+  created_at: string;
+  reading_time_minutes: number;
 };
