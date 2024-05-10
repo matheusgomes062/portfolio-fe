@@ -60,9 +60,9 @@ export type GitHub = {
   stars: number;
 };
 
-export type DevToArticles = {
-  type_of: string;
+export type DevToArticle = {
   id: number;
+  type_of: string;
   title: string;
   description: string;
   published_at: string;
@@ -75,4 +75,8 @@ export type DevToArticles = {
   cover_image: string;
   created_at: string;
   reading_time_minutes: number;
+};
+
+export type MostViewedDevTo = {
+  articles: DevToArticle[];
 };
