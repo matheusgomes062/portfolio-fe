@@ -3,13 +3,6 @@ import { getServerSession } from "next-auth/next"
 import { authOptions } from "./auth/[...nextauth]"
 import prisma from '../../lib/prisma';
 
-interface GuestbookEntry {
-  id: string;
-  email: string;
-  body: string;
-  created_by: string;
-}
-
 interface SessionUser {
   name: string;
   email: string;
