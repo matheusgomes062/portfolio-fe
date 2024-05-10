@@ -24,31 +24,6 @@ async function getSessionUser(req: NextApiRequest, res: NextApiResponse): Promis
   return session.user as SessionUser;
 }
 
-async function createGuestbookEntry(name: string, email: string, body: string, res: NextApiResponse): Promise<void> {
-  await prisma.guestbook.create({
-    data: {
-      email,
-      body: body.slice(0, 500),
-      created_by: name,
-    },
-  }).catch((error) => {
-    console.error('Error creating guestbook entry:', error);
-  }).finally(() => {
-    console.log('Guestbook entry created.');
-    return res.status(200).json({ error: null });
-  });
-}
-
-async function deleteGuestbookEntry(id: string, res: NextApiResponse): Promise<void> {
-  await prisma.guestbook.delete({
-    where: {
-      id,
-    },
-  });
-
-  return res.status(204).json({});
-}
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -68,10 +43,25 @@ export default async function handler(
       case 'POST':
         const { name, email } = await getSessionUser(req, res);
         
-        createGuestbookEntry(name, email, req.body.body, res);
+        await prisma.guestbook.create({
+          data: {
+            email,
+            body: (req.body.body || '').slice(0, 500),
+            created_by: name, 
+          },
+        });
+    
+        return res.status(200).json({ error: null });
       
       case 'DELETE':
-        deleteGuestbookEntry(req.body.id, res);
+        const id = req.body.id;
+        await prisma.guestbook.delete({
+          where: {
+            id: String(id),
+          },
+        });
+
+        return res.status(204).json({});
       
       default:
         return res.status(405).send('Method not allowed.');
