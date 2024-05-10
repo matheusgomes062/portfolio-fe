@@ -57,7 +57,6 @@ function GuestbookForm() {
 function GuestbookEntries() {
   const { data, error, isLoading } = useSWR<Guestbook[]>('/api/guestbook', fetcher);
 
-  console.log(data)
   if (data?.length === 0) {
     return null;
   }
