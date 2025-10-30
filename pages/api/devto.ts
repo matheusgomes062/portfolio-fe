@@ -20,7 +20,8 @@ export default async function handler() {
     return new Response(JSON.stringify({ articles }), {
         status: 200,
         headers: {
-        'content-type': 'application/json',
+            'content-type': 'application/json',
+            'cache-control': 'public, s-maxage=3600, stale-while-revalidate=1800'
         }
     });
 }

@@ -40,7 +40,7 @@ export default async function handler(
           data: {
             email,
             body: (req.body.body || '').slice(0, 500),
-            created_by: name, 
+            created_by: name,
           },
         });
     

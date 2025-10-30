@@ -1,5 +1,39 @@
 [
     {
+        "role": "Sr. Front-end Engineer",
+        "company": "Doble",
+        "source": "https://www.doble.com/",
+        "description": "Developed key features to enhance functionality and UX, including lab item pages, dynamic sample tables, and a system-wide identity change. Built modular, type-safe front-end components with Vue 3, Nuxt, and TypeScript, ensuring maintainability and scalability. Improved reliability through testing, code reviews, and clear documentation, while collaborating with cross-functional teams to deliver production-ready features and reduce technical debt.",
+                "images": [
+            {
+                "alt": "Doble presentation",
+                "image": "/images/doble-logo.webp"
+            },
+            {
+                "alt": "Doble LOGO",
+                "image": "/images/doble-engineering.webp"
+            },
+            {
+                "alt": "Doble website",
+                "image": "/images/doble-place.webp"
+            }
+        ],
+        "startDate": "01/2025",
+        "endDate": "10/2025",
+        "tags": [
+            {"label": "Typescript", "color": "blue"},
+            {"label": "Javascript", "color": "yellow"},
+            {"label": "HTML", "color": "pink"},
+            {"label": "Vue 3", "color": "green"},
+            {"label": "Scss", "color": "pink"},
+            {"label": "Git", "color": "gray"},
+            {"label": "Jira", "color": "blue"},
+            {"label": "Code Review", "color": "orange"},
+            {"label": "Nuxt.js", "color": "green"},
+            {"label": "English", "color": "gray"}
+        ]
+    },
+    {
         "role": "Sr. Software Engineer",
         "company": "BuildingLink",
         "source": "https://www.buildinglink.io/",
@@ -244,7 +278,6 @@
             {"label": ".NET Core", "color": "green"},
             {"label": "SQL", "color": "yellow"},
             {"label": "PostgreSQL", "color": "blue"},
-            {"label": "DDD", "color": "red"},
             {"label": "Unit Testing", "color": "yellow"}
         ]
     },

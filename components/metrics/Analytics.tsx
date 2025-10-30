@@ -7,7 +7,7 @@ import MetricCard from '@/components/metrics/Card';
 export default function AnalyticsCard() {
   const { data } = useSWR<Views>('/api/views', fetcher);
 
-  const pageViews = new Number(data?.total); //when api is working
+  const pageViews = data?.total ?? 0;
   // const pageViews = 31415
   const link = 'https://mgomes.dev';
 

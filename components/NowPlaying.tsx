@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { animate } from 'motion';
 
 import fetcher from '../lib/fetcher';
-import { NowPlayingSong } from '../lib/types';
+import { SpotifyNowPlaying } from '../lib/types';
 
 function AnimatedBars() {
   useEffect(() => {
@@ -75,7 +75,7 @@ function AnimatedBars() {
 }
 
 export default function NowPlaying() {
-  const { data } = useSWR<NowPlayingSong>('/api/now-playing', fetcher);
+  const { data } = useSWR<SpotifyNowPlaying>('/api/now-playing', fetcher);
 
   return (
     <div className="flex flex-row-reverse items-center sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full">

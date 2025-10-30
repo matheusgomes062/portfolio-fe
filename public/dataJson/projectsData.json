@@ -1,22 +1,18 @@
 [
   {
-    "title": "LaraZillow",
-    "githubLink": "https://github.com/matheusgomes062/larazillow",
-    "source": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    "title": "CV Online",
+    "externalLink": "https://cv-online-alfa.vercel.app/",
+    "githubLink": "https://github.com/matheusgomes062/cv-online-1",
+    "source": "https://private-user-images.githubusercontent.com/47605309/507367130-a93490a3-851f-4622-879a-7ba5765c2baf.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjE3ODYzMjEsIm5iZiI6MTc2MTc4NjAyMSwicGF0aCI6Ii80NzYwNTMwOS81MDczNjcxMzAtYTkzNDkwYTMtODUxZi00NjIyLTg3OWEtN2JhNTc2NWMyYmFmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDMwVDAxMDAyMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlmODQzYmY3MDAzODE3NmYxNGE2MTY1N2JiMDU0OTA2ODgxNWUyY2U1MDJmYWIzOTk3NTQ4NWE5YTg0YzcyZGYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.I14Dfu2w_zM0rivOc_HGZUuxdhHdyYGMuBnVnHa3Bms",
     "tags": [
-      {"label": "Vue3", "color": "green"},
+      {"label": "Vue", "color": "green"},
       {"label": "Javascript", "color": "yellow"},
       {"label": "Vite", "color": "purple"},
-      {"label": "Tailwindcss", "color": "blue"},
       {"label": "Git", "color": "gray"},
-      {"label": "Laravel", "color": "red"},
-      {"label": "Php", "color": "blue"},
       {"label": "Vercel", "color": "gray"},
-      {"label": "Docker", "color": "blue"},
-      {"label": "Inertia", "color": "blue"},
-      {"label": "Eloquent ORM", "color": "red"}
+      {"label": "Typescript", "color": "blue"}
     ],
-    "summary": "This is a real estate listing web application created using Laravel, Vue, Inertia & Tailwind. From the course of Piotr Jura."
+    "summary": "An online résumé builder that allows users to fill in their information following a proven, winning résumé format. It also provides tips and guidance to help improve your résumé."
   },
   {
     "title": "PARA Resiliencia",
@@ -26,7 +22,7 @@
       {"label": "Vue.js", "color": "green"},
       {"label": "Bootstrap", "color": "blue"},
       {"label": "Figma", "color": "purple"},
-      {"label": "Sass", "color": "pink"},
+      {"label": "Scss", "color": "pink"},
       {"label": "Git", "color": "gray"},
       {"label": "Vercel", "color": "gray"}
     ],
@@ -106,54 +102,6 @@
       {"label": "Hackathon", "color": "green"}
     ],
     "summary": "Solution for Summit Hack - Americanas, promoted by Shawee! Here we have some features, namely: 'Surprise me', 'Méri, virtual assistant' and 'Gift your friends'."
-  },
-  {
-    "title": "Sort visualizers",
-    "tags": [
-      {"label": "Javascript", "color": "gray"},
-      {"label": "Git", "color": "gray"},
-      {"label": "Html", "color": "pink"},
-      {"label": "Css", "color": "purple"},
-      {"label": "Algorithm", "color": "green"},
-      {"label": "React", "color": "blue"},
-      {"label": "Next.js", "color": "blue"},
-      {"label": "Tailwindcss", "color": "blue"},
-      {"label": "Vercel", "color": "gray"}
-    ],
-    "summary": "WIP. The React Sorting Visualizer project aims to provide a dynamic and interactive way to visualize various sorting algorithms in action.",
-    "wip": true
-  },
-  {
-    "title": "Clean Node API",
-    "tags": [
-      {"label": "Node", "color": "green"},
-      {"label": "Jest", "color": "red"},
-      {"label": "Typescript", "color": "blue"},
-      {"label": "Swagger", "color": "green"},
-      {"label": "Github Actions", "color": "gray"},
-      {"label": "Javascript", "color": "gray"},
-      {"label": "Git", "color": "gray"}
-    ],
-    "summary": "WIP. The React Sorting Visualizer project aims to provide a dynamic and interactive way to visualize various sorting algorithms in action.",
-    "wip": true
-  }, 
-  {
-    "title": "Analisa meu CV",
-    "tags": [
-      {"label": "Next", "color": "green"},
-      {"label": "React", "color": "blue"},
-      {"label": "Prisma", "color": "blue"},
-      {"label": "Git", "color": "gray"},
-      {"label": "tRPC", "color": "red"},
-      {"label": "Tailwindcss", "color": "blue"},
-      {"label": "Vercel", "color": "gray"},
-      {"label": "Stripe", "color": "purple"},
-      {"label": "shadcn-ui", "color": "blue"},
-      {"label": "Pinecone", "color": "green"},
-      {"label": "TypeScript", "color": "blue"}
-    ],
-    "summary": "WIP. Project for analyzing my CV and giving feedback using AI. It's a fullstack project using Next.js, Prisma, tRPC, Tailwindcss, Stripe, shadcn-ui, Pinecone and TypeScript.",
-    "wip": true
   }
 ]
   

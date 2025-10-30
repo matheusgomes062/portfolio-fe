@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes';
 import { Rubik } from '@next/font/google';
 import { SessionProvider } from 'next-auth/react';
 import { Analytics } from '@vercel/analytics/react';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 export const rubik = Rubik({
   subsets: ['latin'],
@@ -12,17 +13,19 @@ export const rubik = Rubik({
 });
 
 export default function App({
-  Component, 
+  Component,
   pageProps: { session, ...pageProps } }: AppProps
   ){
   return (
-    <SessionProvider session={pageProps.session}>
-      <ThemeProvider attribute="class">
-        <main className={`${rubik.variable} font-sans`}>
-          <Component {...pageProps} />
-          <Analytics />
-        </main>
-      </ThemeProvider>
-    </SessionProvider>
+    <ErrorBoundary>
+      <SessionProvider session={pageProps.session}>
+        <ThemeProvider attribute="class">
+          <main className={`${rubik.variable} font-sans`}>
+            <Component {...pageProps} />
+            <Analytics />
+          </main>
+        </ThemeProvider>
+      </SessionProvider>
+    </ErrorBoundary>
   )
 }
