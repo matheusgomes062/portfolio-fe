@@ -1,82 +1,62 @@
-import { MDXRemoteSerializeResult } from 'next-mdx-remote';
-
-export type Post = {
-  _id: string;
-  slug: string;
-  content: MDXRemoteSerializeResult;
-  title: string;
-  date: string;
-  excerpt: string;
-  coverImage: string;
-  readingTime: string;
-  tweets: any[];
-};
-
-export type Snippet = {
-  _id: string;
-  slug: string;
-  content: MDXRemoteSerializeResult;
-  title: string;
-  description: string;
-  logo: string;
-};
-
-export enum Form {
-  Initial,
-  Loading,
-  Success,
-  Error
-}
-
-export type FormState = {
-  state: Form;
-  message?: string;
-};
-
-export type Views = {
-  total: number;
-};
-
-export type Song = {
-  songUrl: string;
-  artist: string;
-  title: string;
-};
-
-export type NowPlayingSong = {
+export interface SpotifyNowPlaying {
   album: string;
   albumImageUrl: string;
   artist: string;
   isPlaying: boolean;
   songUrl: string;
   title: string;
-};
+}
 
-export type TopTracks = {
-  tracks: Song[];
-};
+export interface SpotifyTopTrack {
+  artist: string;
+  songUrl: string;
+  title: string;
+}
 
-export type GitHub = {
+export interface DevToArticle {
+  title: string;
+  link: string;
+  views: number;
+}
+
+export interface GitHubStats {
+  followers: number;
   stars: number;
-};
+}
 
-export type DevToArticle = {
-  id: number;
-  type_of: string;
+export type GitHub = GitHubStats;
+
+export interface Project {
+  id: string;
   title: string;
   description: string;
-  published_at: string;
-  slug: string;
-  path: string;
-  url: string;
-  page_views_count: number;
-  published_timestamp: string;
-  positive_reactions_count: number;
-  cover_image: string;
-  created_at: string;
-  reading_time_minutes: number;
-};
+  image?: string;
+  tags?: string[];
+  githubUrl?: string;
+  liveUrl?: string;
+}
 
-export type MostViewedDevTo = {
+export interface MostViewedDevTo {
   articles: DevToArticle[];
-};
+}
+
+export interface Experience {
+  id: string;
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  tags?: string[];
+  images?: Array<{
+    alt: string;
+    image: string;
+  }>;
+}
+
+export interface TopTracks {
+  tracks: SpotifyTopTrack[];
+}
+
+export interface Views {
+  total: number;
+}

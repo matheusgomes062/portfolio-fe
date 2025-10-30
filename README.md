@@ -1,34 +1,382 @@
-![image](https://user-images.githubusercontent.com/47605309/209061871-90fa5ebc-0a87-4b44-b1bc-f2fd8d13df90.png)
+# Matheus Gomes Portfolio
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Portfolio Preview](https://user-images.githubusercontent.com/47605309/209061871-90fa5ebc-0a87-4b44-b1bc-f2fd8d13df90.png)
+
+A modern, responsive personal portfolio website built with [Next.js](https://nextjs.org/) to showcase projects, blog posts, experiences, and professional background. Features include a guestbook, Spotify integration, and blog integration.
+
+## Features
+
+- **Homepage**: Welcome section, featured projects, and latest blog posts from Dev.to.
+- **About Page**: Professional journey, experiences, and social media links.
+- **Projects Page**: Showcase of personal and professional projects.
+- **Guestbook**: Visitor interactions stored in MongoDB.
+- **Blog Integration**: Pulls articles from Dev.to API.
+- **Spotify Integration**: Displays currently playing song and top tracks.
+- **Dark Mode**: Theme switching with `next-themes`.
+- **Analytics**: Vercel Analytics for site metrics.
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, React 18, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, Prisma ORM with MongoDB
+- **Authentication**: NextAuth.js
+- **Content**: Markdown files
+- **External APIs**: Dev.to, GitHub, Spotify, Google APIs
+- **Deployment**: Vercel
+- **Package Manager**: pnpm
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- pnpm
+- MongoDB database (for guestbook and auth)
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/matheusgomes062/portfolio-fe.git
+    cd portfolio-fe
+    ```
+
+2. Install dependencies:
+    ```bash
+    pnpm install
+    ```
+
+3. Set up environment variables:
+    Copy `.env.example` to `.env.local` and fill in the required values:
+    - `DATABASE_URL`: MongoDB connection string
+    - `NEXTAUTH_SECRET`: Random secret for NextAuth
+    - `NEXTAUTH_URL`: Your app's URL
+    - Spotify API keys (for now-playing integration)
+    - Dev.to API key (if needed)
+    - Google API credentials (if used)
+
+4. Generate Prisma client:
+    ```bash
+    pnpm run postinstall
+    ```
+
+5. Run the development server:
+    ```bash
+    pnpm run dev
+    ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Building for Production
 
 ```bash
-pnpm run dev
+pnpm run build
+pnpm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- `pages/`: Next.js pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `content/`: Markdown files for posts and experiences
+- `public/`: Static assets and JSON data
+- `prisma/`: Database schema and migrations
+- `styles/`: Global and component-specific CSS
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Contributing
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm run lint`
+5. Submit a pull request
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+Deploy to Vercel by connecting your GitHub repository. Ensure environment variables are set in Vercel dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+For more details, see [Next.js deployment docs](https://nextjs.org/docs/deployment).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is open source and available under the [MIT License](LICENSE).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/matheusgomes062/portfolio-fe.git
+   cd portfolio-fe
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and fill in the required values:
+   - `DATABASE_URL`: MongoDB connection string
+   - `NEXTAUTH_SECRET`: Random secret for NextAuth
+   - `NEXTAUTH_URL`: Your app's URL
+   - Spotify API keys (for now-playing integration)
+   - Dev.to API key (if needed)
+   - Google API credentials (if used)
+
+4. Generate Prisma client:
+   ```bash
+   pnpm run postinstall
+   ```
+
+5. Run the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Building for Production
+
+```bash
+pnpm run build
+pnpm run start
+```
+
+## Project Structure
+
+- `pages/`: Next.js pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `content/`: Markdown files for posts and experiences
+- `public/`: Static assets and JSON data
+- `prisma/`: Database schema and migrations
+- `styles/`: Global and component-specific CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm run lint`
+5. Submit a pull request
+
+## Deployment
+
+Deploy to Vercel by connecting your GitHub repository. Ensure environment variables are set in Vercel dashboard.
+
+For more details, see [Next.js deployment docs](https://nextjs.org/docs/deployment).
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+- MongoDB database (for guestbook and auth)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/matheusgomes062/portfolio-fe.git
+   cd portfolio-fe
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and fill in the required values:
+   - `DATABASE_URL`: MongoDB connection string
+   - `NEXTAUTH_SECRET`: Random secret for NextAuth
+   - `NEXTAUTH_URL`: Your app's URL
+   - Spotify API keys (for now-playing integration)
+   - Dev.to API key (if needed)
+   - Google API credentials (if used)
+
+4. Generate Prisma client:
+   ```bash
+   pnpm run postinstall
+   ```
+
+5. Run the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Building for Production
+
+```bash
+pnpm run build
+pnpm run start
+```
+
+## Project Structure
+
+- `pages/`: Next.js pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `content/`: Markdown files for posts and experiences
+- `public/`: Static assets and JSON data
+- `prisma/`: Database schema and migrations
+- `styles/`: Global and component-specific CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm run lint`
+5. Submit a pull request
+
+## Deployment
+
+Deploy to Vercel by connecting your GitHub repository. Ensure environment variables are set in Vercel dashboard.
+
+For more details, see [Next.js deployment docs](https://nextjs.org/docs/deployment).
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/matheusgomes062/portfolio-fe.git
+   cd portfolio-fe
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and fill in the required values:
+   - `DATABASE_URL`: MongoDB connection string
+   - `NEXTAUTH_SECRET`: Random secret for NextAuth
+   - `NEXTAUTH_URL`: Your app's URL
+   - Spotify API keys (for now-playing integration)
+   - Dev.to API key (if needed)
+   - Google API credentials (if used)
+
+4. Generate Prisma client:
+   ```bash
+   pnpm run postinstall
+   ```
+
+5. Run the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Building for Production
+
+```bash
+pnpm run build
+pnpm run start
+```
+
+## Project Structure
+
+- `pages/`: Next.js pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `content/`: Markdown files for posts and experiences
+- `public/`: Static assets and JSON data
+- `prisma/`: Database schema and migrations
+- `styles/`: Global and component-specific CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm run lint`
+5. Submit a pull request
+
+## Deployment
+
+Deploy to Vercel by connecting your GitHub repository. Ensure environment variables are set in Vercel dashboard.
+
+For more details, see [Next.js deployment docs](https://nextjs.org/docs/deployment).
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/matheusgomes062/portfolio-fe.git
+   cd portfolio-fe
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   ```
+
+3. Set up environment variables:
+   Copy `.env.example` to `.env.local` and fill in the required values:
+   - `DATABASE_URL`: MongoDB connection string
+   - `NEXTAUTH_SECRET`: Random secret for NextAuth
+   - `NEXTAUTH_URL`: Your app's URL
+   - Spotify API keys (for now-playing integration)
+   - Dev.to API key (if needed)
+   - Google API credentials (if used)
+
+4. Generate Prisma client:
+   ```bash
+   pnpm run postinstall
+   ```
+
+5. Run the development server:
+   ```bash
+   pnpm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) to view the site.
+
+### Building for Production
+
+```bash
+pnpm run build
+pnpm run start
+```
+
+## Project Structure
+
+- `pages/`: Next.js pages and API routes
+- `components/`: Reusable React components
+- `lib/`: Utility functions and configurations
+- `content/`: Markdown files for posts and experiences 
+- `public/`: Static assets and JSON data
+- `prisma/`: Database schema and migrations
+- `styles/`: Global and component-specific CSS
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run linting: `pnpm run lint`
+5. Submit a pull request
+
+## Deployment
+
+Deploy to Vercel by connecting your GitHub repository. Ensure environment variables are set in Vercel dashboard.
+
+For more details, see [Next.js deployment docs](https://nextjs.org/docs/deployment).
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+

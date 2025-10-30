@@ -3,13 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["assets.vercel.com", 'images.unsplash.com', 'user-images.githubusercontent.com'], 
+    domains: ["assets.vercel.com", 'images.unsplash.com', 'user-images.githubusercontent.com', 'private-user-images.githubusercontent.com'], 
     formats: ['image/avif', 'image/webp'],
-  },
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } },
-    ],
   },
   transpilePackages: ['next-auth'],
   async headers() {
@@ -31,7 +26,7 @@ const ContentSecurityPolicy = `
     style-src 'self' 'unsafe-inline' *.googleapis.com;
     img-src * blob: data:;
     media-src 'none';
-    connect-src *;
+    connect-src 'self' https://api.github.com https://api.spotify.com https://accounts.spotify.com https://dev.to https://*.vercel-analytics.com;
     font-src 'self' data:;
 `;
 

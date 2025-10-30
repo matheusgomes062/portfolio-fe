@@ -16,7 +16,10 @@ export const getArticles = async () => {
 
     return response.json();
   } catch (error) {
-    console.error('Error fetching articles:', error);
+    // Log error in development only
+    if (process.env.NODE_ENV === 'development') {
+      console.error('Error fetching articles:', error);
+    }
     return null; // or throw error if you want to handle it elsewhere
   }
 };
