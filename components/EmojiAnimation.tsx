@@ -22,7 +22,7 @@ export default function EmojiAnimation({ emojis }: EmojiAnimationProps) {
           transition={{ duration: 1, ease: 'easeOut' }}
           style={{ left: 0, top: 0 }}
         >
-          💯
+          ❤️
         </motion.div>
       ))}
     </>
