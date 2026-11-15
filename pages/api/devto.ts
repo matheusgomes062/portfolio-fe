@@ -1,7 +1,7 @@
 import { getArticles } from '../../lib/devto';
 
 export const config = {
-  runtime: 'experimental-edge'
+  runtime: 'edge'
 };
 
 export default async function handler() {
