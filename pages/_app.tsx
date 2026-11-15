@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes';
-import { Rubik } from '@next/font/google';
+import { Rubik } from 'next/font/google';
 import { SessionProvider } from 'next-auth/react';
 import { Analytics } from '@vercel/analytics/react';
 import ErrorBoundary from '../components/ErrorBoundary';
