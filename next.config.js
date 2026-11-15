@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     domains: ["assets.vercel.com", 'images.unsplash.com', 'user-images.githubusercontent.com', 'private-user-images.githubusercontent.com'], 
     formats: ['image/avif', 'image/webp'],
